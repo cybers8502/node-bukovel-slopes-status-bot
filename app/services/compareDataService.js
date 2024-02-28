@@ -53,6 +53,7 @@ async function compareAndUpdate() {
         }
 
         await updateFirebaseStatus(`${DB_ROOT}new/tracksData/${key}`, externalTrack);
+        await sendTelegramMessage(userMessage);
       }
     }
   } catch (error) {
