@@ -9,7 +9,7 @@ async function sendTelegramMessage(chatID, message) {
 
   try {
     await axios.post(url, params);
-  } catch (e) {
+  } catch {
     throw new Error('Failed to send Telegram message');
   }
 }
