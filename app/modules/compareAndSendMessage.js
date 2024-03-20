@@ -1,8 +1,17 @@
 const {getExternalData} = require('../services/fetchSlopesDataService');
 const {getFirebaseData, removeFirebaseRecord} = require('../services/firebaseService');
-const {DB_ROOT, SLOPES_STATUS_URL} = require('../common-consts');
-const {sendTelegramMessage} = require('../services/sendTelegramMessageService');
+const {DB_ROOT, MAP_URL, SLOPES_STATUS_URL} = require('../common-consts');
+const {sendTelegramMessage, sendTelegramPhoto} = require('../services/sendTelegramMessageService');
+const {takeWebpageScreenshotService} = require('../services/takeWebpageScreenshotService');
 const {updateRecordAndPrepareMessage} = require('./updateRecordAndPrepareMessage');
+
+const customCSSForMapPage = `
+  .react-transform-element {
+    transform: scale(1)!important;
+  }
+  .legend, .map-controls {
+    display: none!important;
+  }`;
 const compareAndSendMessage = async () => {
   try {
     const externalData = await getExternalData();
@@ -33,9 +42,16 @@ const compareAndSendMessage = async () => {
     }
 
     if (collectMessages) {
+      const buffer = await takeWebpageScreenshotService({
+        url: MAP_URL,
+        selector: '#mapObject',
+        customCSS: customCSSForMapPage,
+        customViewport: {width: 2865, height: 1648},
+      });
       const sendMessages = async (chatID) => {
         try {
           await sendTelegramMessage(chatID, collectMessages);
+          await sendTelegramPhoto(chatID, buffer);
         } catch {
           await removeFirebaseRecord(`${DB_ROOT}subscribedChanel/${chatID}`);
         }
@@ -44,7 +60,7 @@ const compareAndSendMessage = async () => {
       if (process.env.NODE_ENV === 'production') {
         await Promise.all(Object.keys(chatsID).map(sendMessages));
       } else {
-        await sendTelegramMessage(process.env.TELEGRAM_CHAT_ID, collectMessages);
+        await sendMessages(process.env.TELEGRAM_CHAT_ID);
       }
     }
   } catch (e) {
