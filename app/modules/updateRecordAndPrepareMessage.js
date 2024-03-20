@@ -5,7 +5,7 @@ const updateRecordAndPrepareMessage = async (type, key, externalData, firebaseDa
   let userMessage = `Оновлено ${type === 'tracks' ? 'схил' : 'витяг'} ${externalData.info.name}.`;
 
   if (externalData?.status !== firebaseData?.status) {
-    userMessage += `\nСтатус змінено на ${externalData.status === 'open' ? 'відкрито' : 'зачинено'}.`;
+    userMessage += `\nСтатус змінено на ${getTrackStatus(externalData.status)}`;
   }
   if (externalData?.isOpen !== firebaseData?.isOpen) {
     userMessage += `\nСтатус змінено на ${externalData.isOpen ? 'відкрито' : 'зачинено'}.`;
@@ -33,6 +33,17 @@ const updateRecordAndPrepareMessage = async (type, key, externalData, firebaseDa
   await updateFirebaseRecord(`${DB_ROOT}${type}Data/${key}`, externalData);
 
   return userMessage;
+};
+
+const getTrackStatus = (status) => {
+  switch (status) {
+    case 'open':
+      return 'відкрито';
+    case 'close':
+      return 'зачинено';
+    case 'waiting':
+      return 'очікується відкриття';
+  }
 };
 
 module.exports = {updateRecordAndPrepareMessage};

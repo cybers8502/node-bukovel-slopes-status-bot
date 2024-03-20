@@ -1,9 +1,10 @@
-const {getExternalData} = require('../services/fetchSlopesDataService');
-const {getFirebaseData, removeFirebaseRecord} = require('../services/firebaseService');
 const {DB_ROOT, MAP_URL, SLOPES_STATUS_URL} = require('../common-consts');
+const {getExternalData} = require('../services/fetchSlopesDataService');
+const {getFirebaseData, removeFirebaseRecord, updateFirebaseRecord} = require('../services/firebaseService');
 const {sendTelegramMessage, sendTelegramPhoto} = require('../services/sendTelegramMessageService');
 const {takeWebpageScreenshotService} = require('../services/takeWebpageScreenshotService');
 const {updateRecordAndPrepareMessage} = require('./updateRecordAndPrepareMessage');
+const {compareWaitingTracksData} = require('../modules/compareWaitingTracksData');
 
 const customCSSForMapPage = `
   .react-transform-element {
@@ -34,11 +35,15 @@ const compareAndSendMessage = async () => {
       }
     }
 
-    if (externalData.waitingTracksData.length > 0) {
-      await sendTelegramMessage(
-        process.env.TELEGRAM_CHAT_ID,
-        `Оновлено waitingTracksData ${SLOPES_STATUS_URL}`,
+    if (
+      (externalData?.waitingTracksData.length > 0 && !firebaseData.waitingTracksData) ||
+      externalData?.waitingTracksData?.length !== firebaseData?.waitingTracksData.length
+    ) {
+      collectMessages += compareWaitingTracksData(
+        externalData.waitingTracksData,
+        firebaseData.waitingTracksData,
       );
+      await updateFirebaseRecord(`${DB_ROOT}waitingTracksData`, externalData.waitingTracksData);
     }
 
     if (collectMessages) {

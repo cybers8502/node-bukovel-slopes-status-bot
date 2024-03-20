@@ -1,220 +1,63 @@
 {
   "tracksData": {
-    "Track5CRed": {
+    "Track14ABlue": {
       "status": "close",
       "start_date": null,
-      "stop_date": null,
-      "difficulty": "red",
-      "info": {
-        "bottom_height": "1105",
-        "name": "5C",
-        "notes": [],
-        "top_height": "1195",
-        "distance": "340",
-        "lift": {
-          "name": "5",
-          "id": 36
-        }
-      },
-      "date_modified": "2022-12-21T16:58:21.548544+02:00"
-    },
-    "Track9ABlue": {
-      "status": "open",
-      "start_date": "2023-12-09",
       "stop_date": null,
       "difficulty": "blue",
       "info": {
-        "bottom_height": "1010",
-        "name": "9A",
         "notes": [],
-        "top_height": "1050",
-        "distance": "290",
-        "lift": {
-          "name": "9",
-          "id": 37
-        }
-      },
-      "date_modified": "2023-12-10T00:12:15.496537+02:00"
-    },
-    "TrackBBlue": {
-      "status": "open",
-      "start_date": "2023-12-01",
-      "stop_date": null,
-      "difficulty": "blue",
-      "info": {
-        "bottom_height": "895",
-        "name": "B",
-        "notes": [],
-        "top_height": "915",
-        "distance": "40",
-        "lift": {
-          "name": "2R",
-          "id": 39
-        }
-      },
-      "date_modified": "2023-12-02T11:55:42.053306+02:00"
-    },
-    "Track16CBlack": {
-      "status": "open",
-      "start_date": "2024-01-19",
-      "stop_date": null,
-      "difficulty": "black",
-      "info": {
-        "bottom_height": "957",
-        "name": "16C",
-        "notes": [],
-        "top_height": "1195",
-        "distance": "964",
-        "lift": {
-          "name": "16",
-          "id": 42
-        }
-      },
-      "date_modified": "2024-01-19T13:49:18.401307+02:00"
-    },
-    "Track12ARed": {
-      "status": "open",
-      "start_date": "2023-12-21",
-      "stop_date": null,
-      "difficulty": "red",
-      "info": {
-        "bottom_height": "1153",
-        "name": "12A",
-        "notes": [],
-        "top_height": "1371",
-        "distance": "1674",
-        "lift": {
-          "name": "12",
-          "id": 46
-        }
-      },
-      "date_modified": "2023-12-22T10:39:54.233687+02:00"
-    },
-    "Track7ABlue": {
-      "status": "open",
-      "start_date": "2023-12-01",
-      "stop_date": null,
-      "difficulty": "blue",
-      "info": {
-        "bottom_height": "897",
-        "name": "7A",
-        "notes": [],
-        "top_height": "1013",
-        "distance": "1048",
-        "lift": {
-          "name": "7",
-          "id": 34
-        }
-      },
-      "date_modified": "2023-12-02T00:11:26.611929+02:00"
-    },
-    "Track15DRed": {
-      "status": "close",
-      "start_date": null,
-      "stop_date": null,
-      "difficulty": "red",
-      "info": {
-        "bottom_height": "950",
-        "name": "15D",
-        "notes": [],
-        "top_height": "1089",
-        "distance": "500",
-        "lift": {
-          "name": "15",
-          "id": 43
-        }
-      },
-      "date_modified": "2024-01-17T12:56:42.088120+02:00"
-    },
-    "Track5GRed": {
-      "status": "close",
-      "start_date": null,
-      "stop_date": null,
-      "difficulty": "red",
-      "info": {
-        "bottom_height": "905",
-        "name": "5G",
-        "notes": [],
-        "top_height": "1235",
-        "distance": "2106",
-        "lift": {
-          "name": "5",
-          "id": 36
-        }
-      },
-      "date_modified": "2022-04-05T15:58:12.983508+03:00"
-    },
-    "Track1BBlack": {
-      "status": "close",
-      "start_date": null,
-      "stop_date": null,
-      "difficulty": "black",
-      "info": {
-        "bottom_height": "975",
-        "name": "1B",
-        "notes": [],
-        "top_height": "1070",
-        "distance": "296",
-        "lift": {
-          "name": "1",
-          "id": 48
-        }
-      },
-      "date_modified": "2023-02-03T16:09:09.038448+02:00"
-    },
-    "Track15ARed": {
-      "status": "close",
-      "start_date": null,
-      "stop_date": null,
-      "difficulty": "red",
-      "info": {
-        "bottom_height": "932",
-        "name": "15A",
-        "notes": [],
+        "bottom_height": "899",
+        "distance": "2132",
+        "name": "14A",
         "top_height": "1189",
-        "distance": "1528",
         "lift": {
-          "name": "15",
-          "id": 43
+          "name": "14",
+          "id": 44
         }
       },
-      "date_modified": "2022-12-21T17:04:41.129307+02:00"
+      "date_modified": "2025-03-13T19:32:47.297407+02:00"
     },
-    "Track13ARed": {
+    "Track5EBlack": {
       "status": "open",
-      "start_date": "2023-12-09",
+      "start_date": "2024-01-21",
+      "stop_date": null,
+      "difficulty": "black",
+      "info": {
+        "notes": [
+          {
+            "id": 6,
+            "text": "Працює виключно для професійних спортсменів"
+          }
+        ],
+        "bottom_height": "970",
+        "distance": "960",
+        "name": "5E",
+        "top_height": "1050",
+        "lift": {
+          "name": "5",
+          "id": 36
+        }
+      },
+      "date_modified": "2024-01-21T11:21:46.286173+02:00"
+    },
+    "Track11ERed": {
+      "status": "waiting",
+      "start_date": "2024-03-22",
       "stop_date": null,
       "difficulty": "red",
       "info": {
-        "bottom_height": "933",
-        "name": "13A",
         "notes": [],
-        "top_height": "1141",
-        "distance": "1308",
+        "bottom_height": "994",
+        "distance": "390",
+        "name": "11E",
+        "top_height": "1081",
         "lift": {
-          "name": "13",
-          "id": 45
+          "name": "11",
+          "id": 47
         }
       },
-      "date_modified": "2023-12-10T00:11:55.049782+02:00"
-    },
-    "Track1CBlue": {
-      "status": "open",
-      "start_date": "2023-12-07",
-      "stop_date": null,
-      "difficulty": "blue",
-      "info": {
-        "bottom_height": "892",
-        "name": "1C",
-        "notes": [],
-        "top_height": "1126",
-        "distance": "1587",
-        "lift": {
-          "name": "1",
-          "id": 48
-        }
-      },
-      "date_modified": "2023-12-09T09:36:04.285275+02:00"
+      "date_modified": "2024-03-20T11:42:37.082824+02:00"
     },
     "Track16DBlack": {
       "status": "close",
@@ -222,11 +65,11 @@
       "stop_date": null,
       "difficulty": "black",
       "info": {
-        "bottom_height": "1035",
-        "name": "16D",
         "notes": [],
-        "top_height": "1205",
+        "bottom_height": "1035",
         "distance": "528",
+        "name": "16D",
+        "top_height": "1205",
         "lift": {
           "name": "16",
           "id": 42
@@ -234,71 +77,17 @@
       },
       "date_modified": "2022-12-21T16:58:38.136746+02:00"
     },
-    "Track15CRed": {
-      "status": "open",
-      "start_date": "2024-02-02",
-      "stop_date": null,
-      "difficulty": "red",
-      "info": {
-        "bottom_height": "932",
-        "name": "15C",
-        "notes": [],
-        "top_height": "1090",
-        "distance": "815",
-        "lift": {
-          "name": "15",
-          "id": 43
-        }
-      },
-      "date_modified": "2024-02-02T08:08:42.140751+02:00"
-    },
-    "TrackSBlue": {
-      "status": "close",
-      "start_date": null,
-      "stop_date": null,
-      "difficulty": "blue",
-      "info": {
-        "bottom_height": "1021",
-        "name": "S",
-        "notes": [],
-        "top_height": "1061",
-        "distance": "324",
-        "lift": {
-          "name": "14",
-          "id": 44
-        }
-      },
-      "date_modified": "2023-03-23T12:44:18.732164+02:00"
-    },
-    "Track11ARed": {
-      "status": "open",
-      "start_date": "2023-12-19",
-      "stop_date": null,
-      "difficulty": "red",
-      "info": {
-        "bottom_height": "1100",
-        "name": "11A",
-        "notes": [],
-        "top_height": "1200",
-        "distance": "600",
-        "lift": {
-          "name": "11",
-          "id": 47
-        }
-      },
-      "date_modified": "2023-12-19T23:55:53.449850+02:00"
-    },
     "Track8ARed": {
       "status": "close",
       "start_date": null,
       "stop_date": null,
       "difficulty": "red",
       "info": {
-        "bottom_height": "932",
-        "name": "8A",
         "notes": [],
-        "top_height": "1080",
+        "bottom_height": "932",
         "distance": "936",
+        "name": "8A",
+        "top_height": "1080",
         "lift": {
           "name": "8",
           "id": 33
@@ -306,107 +95,17 @@
       },
       "date_modified": "2022-12-21T17:04:53.345708+02:00"
     },
-    "Track8DBlue": {
-      "status": "open",
-      "start_date": "2023-12-13",
-      "stop_date": null,
-      "difficulty": "blue",
-      "info": {
-        "bottom_height": "931",
-        "name": "8D",
-        "notes": [],
-        "top_height": "1117",
-        "distance": "1420",
-        "lift": {
-          "name": "8",
-          "id": 33
-        }
-      },
-      "date_modified": "2023-12-13T23:51:16.871801+02:00"
-    },
-    "TrackFBlue": {
-      "status": "open",
-      "start_date": "2023-12-13",
-      "stop_date": null,
-      "difficulty": "blue",
-      "info": {
-        "bottom_height": "1075",
-        "name": "F",
-        "notes": [],
-        "top_height": "1112",
-        "distance": "294",
-        "lift": {
-          "name": "8",
-          "id": 33
-        }
-      },
-      "date_modified": "2023-12-13T23:51:28.999303+02:00"
-    },
-    "Track11CBlack": {
-      "status": "close",
-      "start_date": null,
-      "stop_date": null,
-      "difficulty": "black",
-      "info": {
-        "bottom_height": "1037",
-        "name": "11C",
-        "notes": [],
-        "top_height": "1185",
-        "distance": "420",
-        "lift": {
-          "name": "11",
-          "id": 47
-        }
-      },
-      "date_modified": "2024-01-17T12:39:49.261411+02:00"
-    },
-    "Track15BRed": {
-      "status": "close",
-      "start_date": null,
-      "stop_date": null,
-      "difficulty": "red",
-      "info": {
-        "bottom_height": "945",
-        "name": "15B",
-        "notes": [],
-        "top_height": "1060",
-        "distance": "331",
-        "lift": {
-          "name": "15",
-          "id": 43
-        }
-      },
-      "date_modified": "2024-01-17T12:57:09.436221+02:00"
-    },
-    "TrackDBlue": {
-      "status": "open",
-      "start_date": "2023-12-01",
-      "stop_date": null,
-      "difficulty": "blue",
-      "info": {
-        "bottom_height": "889",
-        "name": "D",
-        "notes": [],
-        "top_height": "940",
-        "distance": "245",
-        "lift": {
-          "name": "5",
-          "id": 36
-        }
-      },
-      "date_modified": "2023-12-02T11:55:46.602679+02:00"
-    },
     "Track17ABlue": {
       "status": "open",
       "start_date": "2023-12-20",
       "stop_date": null,
       "difficulty": "blue",
       "info": {
-        "bottom_height": "944",
-        "name": "17A",
         "notes": [],
-        "top_height": "1146",
+        "bottom_height": "944",
         "distance": "612",
+        "name": "17A",
+        "top_height": "1146",
         "lift": {
           "name": "17",
           "id": 41
@@ -414,161 +113,17 @@
       },
       "date_modified": "2023-12-21T11:51:52.231867+02:00"
     },
-    "Track11FBlue": {
-      "status": "open",
-      "start_date": "2023-12-12",
-      "stop_date": null,
-      "difficulty": "blue",
-      "info": {
-        "bottom_height": "931",
-        "name": "11F",
-        "notes": [],
-        "top_height": "1202",
-        "distance": "2065",
-        "lift": {
-          "name": "11",
-          "id": 47
-        }
-      },
-      "date_modified": "2023-12-13T10:41:43.313895+02:00"
-    },
-    "Track22BBlack": {
-      "status": "close",
-      "start_date": null,
-      "stop_date": null,
-      "difficulty": "black",
-      "info": {
-        "bottom_height": "960",
-        "name": "22B",
-        "notes": [],
-        "top_height": "1186",
-        "distance": "707",
-        "lift": {
-          "name": "22",
-          "id": 38
-        }
-      },
-      "date_modified": "2022-12-21T16:58:24.779603+02:00"
-    },
-    "Track13DRed": {
-      "status": "open",
-      "start_date": "2024-01-18",
-      "stop_date": null,
-      "difficulty": "red",
-      "info": {
-        "bottom_height": "929",
-        "name": "13D",
-        "notes": [],
-        "top_height": "1149",
-        "distance": "1279",
-        "lift": {
-          "name": "13",
-          "id": 45
-        }
-      },
-      "date_modified": "2024-01-18T02:14:02.087747+02:00"
-    },
-    "Track16ARed": {
-      "status": "open",
-      "start_date": "2024-01-11",
-      "stop_date": null,
-      "difficulty": "red",
-      "info": {
-        "bottom_height": "961",
-        "name": "16A",
-        "notes": [],
-        "top_height": "1205",
-        "distance": "1741",
-        "lift": {
-          "name": "16",
-          "id": 42
-        }
-      },
-      "date_modified": "2024-01-12T23:55:26.188643+02:00"
-    },
-    "Track2ARed": {
-      "status": "open",
-      "start_date": "2023-12-08",
-      "stop_date": null,
-      "difficulty": "red",
-      "info": {
-        "bottom_height": "897",
-        "name": "2A",
-        "notes": [],
-        "top_height": "1110",
-        "distance": "915",
-        "lift": {
-          "name": "2R",
-          "id": 39
-        }
-      },
-      "date_modified": "2023-12-21T12:23:16.130918+02:00"
-    },
-    "TrackMBlue": {
-      "status": "open",
-      "start_date": "2023-12-09",
-      "stop_date": null,
-      "difficulty": "blue",
-      "info": {
-        "bottom_height": "912",
-        "name": "M",
-        "notes": [],
-        "top_height": "927",
-        "distance": "200",
-        "lift": {
-          "name": "14",
-          "id": 44
-        }
-      },
-      "date_modified": "2023-12-10T00:12:29.150201+02:00"
-    },
-    "Track8BRed": {
-      "status": "open",
-      "start_date": "2024-01-15",
-      "stop_date": null,
-      "difficulty": "red",
-      "info": {
-        "bottom_height": "950",
-        "name": "8B",
-        "notes": [],
-        "top_height": "1111",
-        "distance": "757",
-        "lift": {
-          "name": "8",
-          "id": 33
-        }
-      },
-      "date_modified": "2024-01-16T01:50:09.619063+02:00"
-    },
-    "Track12BBlue": {
-      "status": "open",
-      "start_date": "2023-12-01",
-      "stop_date": null,
-      "difficulty": "blue",
-      "info": {
-        "bottom_height": "1153",
-        "name": "12B",
-        "notes": [],
-        "top_height": "1371",
-        "distance": "1600",
-        "lift": {
-          "name": "12",
-          "id": 46
-        }
-      },
-      "date_modified": "2023-12-02T00:11:34.433261+02:00"
-    },
     "Track11DRed": {
       "status": "close",
       "start_date": null,
       "stop_date": null,
       "difficulty": "red",
       "info": {
-        "bottom_height": "932",
-        "name": "11D",
         "notes": [],
-        "top_height": "1204",
+        "bottom_height": "932",
         "distance": "1593",
+        "name": "11D",
+        "top_height": "1204",
         "lift": {
           "name": "11",
           "id": 47
@@ -576,213 +131,59 @@
       },
       "date_modified": "2022-04-05T16:00:09.037952+03:00"
     },
-    "Track16EBlack": {
-      "status": "close",
-      "start_date": null,
-      "stop_date": null,
-      "difficulty": "black",
-      "info": {
-        "bottom_height": "961",
-        "name": "16E",
-        "notes": [],
-        "top_height": "1070",
-        "distance": "580",
-        "lift": {
-          "name": "16",
-          "id": 42
-        }
-      },
-      "date_modified": "2022-12-21T16:58:36.332555+02:00"
-    },
-    "Track15EBlue": {
+    "Track12ARed": {
       "status": "open",
-      "start_date": "2024-02-02",
-      "stop_date": null,
-      "difficulty": "blue",
-      "info": {
-        "bottom_height": "927",
-        "name": "15E",
-        "notes": [],
-        "top_height": "1185",
-        "distance": "1900",
-        "lift": {
-          "name": "15",
-          "id": 43
-        }
-      },
-      "date_modified": "2024-02-02T08:09:10.549641+02:00"
-    },
-    "Track12CRed": {
-      "status": "open",
-      "start_date": "2024-01-14",
+      "start_date": "2023-12-21",
       "stop_date": null,
       "difficulty": "red",
       "info": {
-        "bottom_height": "1192",
-        "name": "12C",
-        "notes": [
-          {
-            "id": 2,
-            "text": "Траса для фрі-райду"
-          }
-        ],
-        "top_height": "1305",
-        "distance": "696",
+        "notes": [],
+        "bottom_height": "1153",
+        "distance": "1674",
+        "name": "12A",
+        "top_height": "1371",
         "lift": {
           "name": "12",
           "id": 46
         }
       },
-      "date_modified": "2024-01-14T23:54:00.448118+02:00"
+      "date_modified": "2023-12-22T10:39:54.233687+02:00"
     },
-    "Track11ERed": {
+    "TrackDBlue": {
       "status": "open",
-      "start_date": "2023-12-21",
-      "stop_date": null,
-      "difficulty": "red",
-      "info": {
-        "bottom_height": "994",
-        "name": "11E",
-        "notes": [],
-        "top_height": "1081",
-        "distance": "390",
-        "lift": {
-          "name": "11",
-          "id": 47
-        }
-      },
-      "date_modified": "2023-12-22T10:41:01.222272+02:00"
-    },
-    "Track8CRed": {
-      "status": "close",
-      "start_date": null,
-      "stop_date": null,
-      "difficulty": "red",
-      "info": {
-        "bottom_height": "955",
-        "name": "8C",
-        "notes": [],
-        "top_height": "1105",
-        "distance": "750",
-        "lift": {
-          "name": "8",
-          "id": 33
-        }
-      },
-      "date_modified": "2022-12-21T17:04:55.985625+02:00"
-    },
-    "Track7DBlue": {
-      "status": "open",
-      "start_date": "2023-12-08",
+      "start_date": "2023-12-01",
       "stop_date": null,
       "difficulty": "blue",
       "info": {
-        "bottom_height": "900",
-        "name": "7D",
         "notes": [],
+        "bottom_height": "889",
+        "distance": "245",
+        "name": "D",
         "top_height": "940",
-        "distance": "0",
-        "lift": {
-          "name": "M",
-          "id": 50
-        }
-      },
-      "date_modified": "2023-12-09T09:35:33.669255+02:00"
-    },
-    "Track5KBlue": {
-      "status": "open",
-      "start_date": "2023-12-21",
-      "stop_date": null,
-      "difficulty": "blue",
-      "info": {
-        "bottom_height": "896",
-        "name": "5K",
-        "notes": [],
-        "top_height": "1276",
-        "distance": "2625",
         "lift": {
           "name": "5",
           "id": 36
         }
       },
-      "date_modified": "2023-12-22T11:18:14.397778+02:00"
+      "date_modified": "2023-12-02T11:55:46.602679+02:00"
     },
-    "Track14BBlue": {
-      "status": "open",
-      "start_date": "2024-01-12",
-      "stop_date": null,
-      "difficulty": "blue",
-      "info": {
-        "bottom_height": "320",
-        "name": "14B",
-        "notes": [],
-        "top_height": "1021",
-        "distance": "1061",
-        "lift": {
-          "name": "14",
-          "id": 44
-        }
-      },
-      "date_modified": "2024-01-12T10:00:10.027228+02:00"
-    },
-    "Track12DRed": {
-      "status": "open",
-      "start_date": "2024-01-14",
-      "stop_date": null,
-      "difficulty": "red",
-      "info": {
-        "bottom_height": "1162",
-        "name": "12D",
-        "notes": [
-          {
-            "id": 2,
-            "text": "Траса для фрі-райду"
-          }
-        ],
-        "top_height": "1255",
-        "distance": "440",
-        "lift": {
-          "name": "12",
-          "id": 46
-        }
-      },
-      "date_modified": "2024-01-14T23:54:03.443822+02:00"
-    },
-    "Track3ABlue": {
-      "status": "open",
-      "start_date": "2023-12-14",
-      "stop_date": null,
-      "difficulty": "blue",
-      "info": {
-        "bottom_height": "902",
-        "name": "3A",
-        "notes": [],
-        "top_height": "1126",
-        "distance": "2600",
-        "lift": {
-          "name": "3",
-          "id": 49
-        }
-      },
-      "date_modified": "2023-12-14T23:53:36.469090+02:00"
-    },
-    "Track7BBlue": {
+    "Track13BRed": {
       "status": "close",
       "start_date": null,
       "stop_date": null,
-      "difficulty": "blue",
+      "difficulty": "red",
       "info": {
-        "bottom_height": "898",
-        "name": "7B",
         "notes": [],
-        "top_height": "976",
-        "distance": "867",
+        "bottom_height": "950",
+        "distance": "650",
+        "name": "13B",
+        "top_height": "1110",
         "lift": {
-          "name": "7",
-          "id": 34
+          "name": "13",
+          "id": 45
         }
       },
-      "date_modified": "2022-12-21T17:05:33.100182+02:00"
+      "date_modified": "2022-04-05T16:00:18.812074+03:00"
     },
     "Track11BBlack": {
       "status": "close",
@@ -790,11 +191,11 @@
       "stop_date": null,
       "difficulty": "black",
       "info": {
-        "bottom_height": "970",
-        "name": "11B",
         "notes": [],
-        "top_height": "1197",
+        "bottom_height": "970",
         "distance": "804",
+        "name": "11B",
+        "top_height": "1197",
         "lift": {
           "name": "11",
           "id": 47
@@ -802,23 +203,77 @@
       },
       "date_modified": "2022-04-05T16:00:07.525845+03:00"
     },
-    "TrackJBlue": {
+    "Track16ARed": {
+      "status": "waiting",
+      "start_date": "2024-03-22",
+      "stop_date": null,
+      "difficulty": "red",
+      "info": {
+        "notes": [],
+        "bottom_height": "961",
+        "distance": "1741",
+        "name": "16A",
+        "top_height": "1205",
+        "lift": {
+          "name": "16",
+          "id": 42
+        }
+      },
+      "date_modified": "2024-03-20T11:56:00.659702+02:00"
+    },
+    "Track11ARed": {
+      "status": "close",
+      "start_date": null,
+      "stop_date": null,
+      "difficulty": "red",
+      "info": {
+        "notes": [],
+        "bottom_height": "1100",
+        "distance": "600",
+        "name": "11A",
+        "top_height": "1200",
+        "lift": {
+          "name": "11",
+          "id": 47
+        }
+      },
+      "date_modified": "2024-03-17T18:58:50.903792+02:00"
+    },
+    "Track12BBlue": {
       "status": "open",
-      "start_date": "2023-12-09",
+      "start_date": "2023-12-01",
       "stop_date": null,
       "difficulty": "blue",
       "info": {
-        "bottom_height": "980",
-        "name": "J",
         "notes": [],
-        "top_height": "1015",
-        "distance": "221",
+        "bottom_height": "1153",
+        "distance": "1600",
+        "name": "12B",
+        "top_height": "1371",
         "lift": {
-          "name": "13",
-          "id": 45
+          "name": "12",
+          "id": 46
         }
       },
-      "date_modified": "2023-12-10T00:12:37.917438+02:00"
+      "date_modified": "2023-12-02T00:11:34.433261+02:00"
+    },
+    "Track5FBlack": {
+      "status": "close",
+      "start_date": null,
+      "stop_date": null,
+      "difficulty": "black",
+      "info": {
+        "notes": [],
+        "bottom_height": "900",
+        "distance": "768",
+        "name": "5F",
+        "top_height": "1135",
+        "lift": {
+          "name": "5",
+          "id": 36
+        }
+      },
+      "date_modified": "2022-12-21T16:58:19.822304+02:00"
     },
     "Track1ARed": {
       "status": "close",
@@ -826,11 +281,11 @@
       "stop_date": null,
       "difficulty": "red",
       "info": {
-        "bottom_height": "860",
-        "name": "1A",
         "notes": [],
-        "top_height": "1126",
+        "bottom_height": "860",
         "distance": "1602",
+        "name": "1A",
+        "top_height": "1126",
         "lift": {
           "name": "1",
           "id": 48
@@ -838,23 +293,424 @@
       },
       "date_modified": "2022-04-05T16:00:01.466784+03:00"
     },
-    "Track1EBlue": {
-      "status": "open",
-      "start_date": "2023-12-08",
+    "Track15EBlue": {
+      "status": "close",
+      "start_date": null,
       "stop_date": null,
       "difficulty": "blue",
       "info": {
-        "bottom_height": "874",
-        "name": "1E",
         "notes": [],
-        "top_height": "1127",
-        "distance": "2235",
+        "bottom_height": "927",
+        "distance": "1900",
+        "name": "15E",
+        "top_height": "1185",
+        "lift": {
+          "name": "15",
+          "id": 43
+        }
+      },
+      "date_modified": "2024-03-11T08:57:19.214054+02:00"
+    },
+    "TrackSBlue": {
+      "status": "close",
+      "start_date": null,
+      "stop_date": null,
+      "difficulty": "blue",
+      "info": {
+        "notes": [],
+        "bottom_height": "1021",
+        "distance": "324",
+        "name": "S",
+        "top_height": "1061",
+        "lift": {
+          "name": "14",
+          "id": 44
+        }
+      },
+      "date_modified": "2023-03-23T12:44:18.732164+02:00"
+    },
+    "Track5GRed": {
+      "status": "close",
+      "start_date": null,
+      "stop_date": null,
+      "difficulty": "red",
+      "info": {
+        "notes": [],
+        "bottom_height": "905",
+        "distance": "2106",
+        "name": "5G",
+        "top_height": "1235",
+        "lift": {
+          "name": "5",
+          "id": 36
+        }
+      },
+      "date_modified": "2022-04-05T15:58:12.983508+03:00"
+    },
+    "Track14BBlue": {
+      "status": "close",
+      "start_date": null,
+      "stop_date": null,
+      "difficulty": "blue",
+      "info": {
+        "notes": [],
+        "bottom_height": "320",
+        "distance": "1061",
+        "name": "14B",
+        "top_height": "1021",
+        "lift": {
+          "name": "14",
+          "id": 44
+        }
+      },
+      "date_modified": "2024-03-13T19:32:52.236889+02:00"
+    },
+    "Track22ABlack": {
+      "status": "close",
+      "start_date": null,
+      "stop_date": null,
+      "difficulty": "black",
+      "info": {
+        "notes": [],
+        "bottom_height": "962",
+        "distance": "501",
+        "name": "22A",
+        "top_height": "1135",
+        "lift": {
+          "name": "22",
+          "id": 38
+        }
+      },
+      "date_modified": "2024-01-17T13:00:41.981085+02:00"
+    },
+    "Track13ARed": {
+      "status": "open",
+      "start_date": "2023-12-09",
+      "stop_date": null,
+      "difficulty": "red",
+      "info": {
+        "notes": [],
+        "bottom_height": "933",
+        "distance": "1308",
+        "name": "13A",
+        "top_height": "1141",
+        "lift": {
+          "name": "13",
+          "id": 45
+        }
+      },
+      "date_modified": "2023-12-10T00:11:55.049782+02:00"
+    },
+    "Track15BRed": {
+      "status": "close",
+      "start_date": null,
+      "stop_date": null,
+      "difficulty": "red",
+      "info": {
+        "notes": [],
+        "bottom_height": "945",
+        "distance": "331",
+        "name": "15B",
+        "top_height": "1060",
+        "lift": {
+          "name": "15",
+          "id": 43
+        }
+      },
+      "date_modified": "2024-01-17T12:57:09.436221+02:00"
+    },
+    "TrackMBlue": {
+      "status": "open",
+      "start_date": "2023-12-09",
+      "stop_date": null,
+      "difficulty": "blue",
+      "info": {
+        "notes": [],
+        "bottom_height": "912",
+        "distance": "200",
+        "name": "M",
+        "top_height": "927",
+        "lift": {
+          "name": "14",
+          "id": 44
+        }
+      },
+      "date_modified": "2023-12-10T00:12:29.150201+02:00"
+    },
+    "Track12DRed": {
+      "status": "close",
+      "start_date": null,
+      "stop_date": null,
+      "difficulty": "red",
+      "info": {
+        "notes": [
+          {
+            "id": 2,
+            "text": "Траса для фрі-райду"
+          }
+        ],
+        "bottom_height": "1162",
+        "distance": "440",
+        "name": "12D",
+        "top_height": "1255",
+        "lift": {
+          "name": "12",
+          "id": 46
+        }
+      },
+      "date_modified": "2024-03-11T18:43:33.221420+02:00"
+    },
+    "Track7DBlue": {
+      "status": "close",
+      "start_date": null,
+      "stop_date": null,
+      "difficulty": "blue",
+      "info": {
+        "notes": [],
+        "bottom_height": "900",
+        "distance": "0",
+        "name": "7D",
+        "top_height": "940",
+        "lift": {
+          "name": "M",
+          "id": 50
+        }
+      },
+      "date_modified": "2024-03-11T08:58:19.297541+02:00"
+    },
+    "Track3DBlue": {
+      "status": "close",
+      "start_date": null,
+      "stop_date": null,
+      "difficulty": "blue",
+      "info": {
+        "notes": [],
+        "bottom_height": "902",
+        "distance": "2000",
+        "name": "3D",
+        "top_height": "1126",
+        "lift": {
+          "name": "3",
+          "id": 49
+        }
+      },
+      "date_modified": "2024-03-05T09:21:56.530631+02:00"
+    },
+    "Track7ABlue": {
+      "status": "open",
+      "start_date": "2023-12-01",
+      "stop_date": null,
+      "difficulty": "blue",
+      "info": {
+        "notes": [],
+        "bottom_height": "897",
+        "distance": "1048",
+        "name": "7A",
+        "top_height": "1013",
+        "lift": {
+          "name": "7",
+          "id": 34
+        }
+      },
+      "date_modified": "2023-12-02T00:11:26.611929+02:00"
+    },
+    "Track16EBlack": {
+      "status": "close",
+      "start_date": null,
+      "stop_date": null,
+      "difficulty": "black",
+      "info": {
+        "notes": [],
+        "bottom_height": "961",
+        "distance": "580",
+        "name": "16E",
+        "top_height": "1070",
+        "lift": {
+          "name": "16",
+          "id": 42
+        }
+      },
+      "date_modified": "2022-12-21T16:58:36.332555+02:00"
+    },
+    "Track9ABlue": {
+      "status": "open",
+      "start_date": "2023-12-09",
+      "stop_date": null,
+      "difficulty": "blue",
+      "info": {
+        "notes": [],
+        "bottom_height": "1010",
+        "distance": "290",
+        "name": "9A",
+        "top_height": "1050",
+        "lift": {
+          "name": "9",
+          "id": 37
+        }
+      },
+      "date_modified": "2023-12-10T00:12:15.496537+02:00"
+    },
+    "Track15CRed": {
+      "status": "close",
+      "start_date": null,
+      "stop_date": null,
+      "difficulty": "red",
+      "info": {
+        "notes": [],
+        "bottom_height": "932",
+        "distance": "815",
+        "name": "15C",
+        "top_height": "1090",
+        "lift": {
+          "name": "15",
+          "id": 43
+        }
+      },
+      "date_modified": "2024-03-11T08:57:03.278475+02:00"
+    },
+    "Track15ARed": {
+      "status": "close",
+      "start_date": null,
+      "stop_date": null,
+      "difficulty": "red",
+      "info": {
+        "notes": [],
+        "bottom_height": "932",
+        "distance": "1528",
+        "name": "15A",
+        "top_height": "1189",
+        "lift": {
+          "name": "15",
+          "id": 43
+        }
+      },
+      "date_modified": "2022-12-21T17:04:41.129307+02:00"
+    },
+    "Track11FBlue": {
+      "status": "waiting",
+      "start_date": "2024-03-22",
+      "stop_date": null,
+      "difficulty": "blue",
+      "info": {
+        "notes": [],
+        "bottom_height": "931",
+        "distance": "2065",
+        "name": "11F",
+        "top_height": "1202",
+        "lift": {
+          "name": "11",
+          "id": 47
+        }
+      },
+      "date_modified": "2024-03-20T11:42:31.917069+02:00"
+    },
+    "Track1CBlue": {
+      "status": "open",
+      "start_date": "2023-12-07",
+      "stop_date": null,
+      "difficulty": "blue",
+      "info": {
+        "notes": [],
+        "bottom_height": "892",
+        "distance": "1587",
+        "name": "1C",
+        "top_height": "1126",
         "lift": {
           "name": "1",
           "id": 48
         }
       },
-      "date_modified": "2023-12-09T09:37:04.701083+02:00"
+      "date_modified": "2023-12-09T09:36:04.285275+02:00"
+    },
+    "Track1BBlack": {
+      "status": "close",
+      "start_date": null,
+      "stop_date": null,
+      "difficulty": "black",
+      "info": {
+        "notes": [],
+        "bottom_height": "975",
+        "distance": "296",
+        "name": "1B",
+        "top_height": "1070",
+        "lift": {
+          "name": "1",
+          "id": 48
+        }
+      },
+      "date_modified": "2023-02-03T16:09:09.038448+02:00"
+    },
+    "Track3ABlue": {
+      "status": "close",
+      "start_date": null,
+      "stop_date": null,
+      "difficulty": "blue",
+      "info": {
+        "notes": [],
+        "bottom_height": "902",
+        "distance": "2600",
+        "name": "3A",
+        "top_height": "1126",
+        "lift": {
+          "name": "3",
+          "id": 49
+        }
+      },
+      "date_modified": "2024-03-04T20:12:43.205587+02:00"
+    },
+    "Track22CBlue": {
+      "status": "close",
+      "start_date": null,
+      "stop_date": null,
+      "difficulty": "blue",
+      "info": {
+        "notes": [],
+        "bottom_height": "960",
+        "distance": "1700",
+        "name": "22C",
+        "top_height": "1180",
+        "lift": {
+          "name": "22",
+          "id": 38
+        }
+      },
+      "date_modified": "2022-12-21T17:05:27.285631+02:00"
+    },
+    "Track16CBlack": {
+      "status": "waiting",
+      "start_date": "2024-03-22",
+      "stop_date": null,
+      "difficulty": "black",
+      "info": {
+        "notes": [],
+        "bottom_height": "957",
+        "distance": "964",
+        "name": "16C",
+        "top_height": "1195",
+        "lift": {
+          "name": "16",
+          "id": 42
+        }
+      },
+      "date_modified": "2024-03-20T11:42:54.785159+02:00"
+    },
+    "Track5ABlue": {
+      "status": "open",
+      "start_date": "2023-12-01",
+      "stop_date": null,
+      "difficulty": "blue",
+      "info": {
+        "notes": [],
+        "bottom_height": "895",
+        "distance": "1794",
+        "name": "5A",
+        "top_height": "1105",
+        "lift": {
+          "name": "5",
+          "id": 36
+        }
+      },
+      "date_modified": "2023-12-02T00:11:16.582343+02:00"
     },
     "Track16BBlack": {
       "status": "close",
@@ -862,17 +718,472 @@
       "stop_date": null,
       "difficulty": "black",
       "info": {
-        "bottom_height": "962",
-        "name": "16B",
         "notes": [],
-        "top_height": "1180",
+        "bottom_height": "962",
         "distance": "900",
+        "name": "16B",
+        "top_height": "1180",
         "lift": {
           "name": "16",
           "id": 42
         }
       },
-      "date_modified": "2022-12-21T16:58:42.715415+02:00"
+      "date_modified": "2024-03-20T11:42:49.920550+02:00"
+    },
+    "Track22BBlack": {
+      "status": "close",
+      "start_date": null,
+      "stop_date": null,
+      "difficulty": "black",
+      "info": {
+        "notes": [],
+        "bottom_height": "960",
+        "distance": "707",
+        "name": "22B",
+        "top_height": "1186",
+        "lift": {
+          "name": "22",
+          "id": 38
+        }
+      },
+      "date_modified": "2022-12-21T16:58:24.779603+02:00"
+    },
+    "Track8CRed": {
+      "status": "waiting",
+      "start_date": "2024-03-22",
+      "stop_date": null,
+      "difficulty": "red",
+      "info": {
+        "notes": [],
+        "bottom_height": "955",
+        "distance": "750",
+        "name": "8C",
+        "top_height": "1105",
+        "lift": {
+          "name": "8",
+          "id": 33
+        }
+      },
+      "date_modified": "2024-03-20T11:42:16.185822+02:00"
+    },
+    "Track1EBlue": {
+      "status": "open",
+      "start_date": "2023-12-08",
+      "stop_date": null,
+      "difficulty": "blue",
+      "info": {
+        "notes": [],
+        "bottom_height": "874",
+        "distance": "2235",
+        "name": "1E",
+        "top_height": "1127",
+        "lift": {
+          "name": "1",
+          "id": 48
+        }
+      },
+      "date_modified": "2023-12-09T09:37:04.701083+02:00"
+    },
+    "Track8DBlue": {
+      "status": "waiting",
+      "start_date": "2024-03-22",
+      "stop_date": null,
+      "difficulty": "blue",
+      "info": {
+        "notes": [],
+        "bottom_height": "931",
+        "distance": "1420",
+        "name": "8D",
+        "top_height": "1117",
+        "lift": {
+          "name": "8",
+          "id": 33
+        }
+      },
+      "date_modified": "2024-03-20T11:42:19.827897+02:00"
+    },
+    "Track8BRed": {
+      "status": "close",
+      "start_date": null,
+      "stop_date": null,
+      "difficulty": "red",
+      "info": {
+        "notes": [],
+        "bottom_height": "950",
+        "distance": "757",
+        "name": "8B",
+        "top_height": "1111",
+        "lift": {
+          "name": "8",
+          "id": 33
+        }
+      },
+      "date_modified": "2024-03-17T18:58:33.125120+02:00"
+    },
+    "TrackURed": {
+      "status": "close",
+      "start_date": null,
+      "stop_date": null,
+      "difficulty": "red",
+      "info": {
+        "notes": [],
+        "bottom_height": "959",
+        "distance": "330",
+        "name": "U",
+        "top_height": "990",
+        "lift": {
+          "name": "13",
+          "id": 45
+        }
+      },
+      "date_modified": "2022-12-21T17:05:12.014371+02:00"
+    },
+    "Track11CBlack": {
+      "status": "close",
+      "start_date": null,
+      "stop_date": null,
+      "difficulty": "black",
+      "info": {
+        "notes": [],
+        "bottom_height": "1037",
+        "distance": "420",
+        "name": "11C",
+        "top_height": "1185",
+        "lift": {
+          "name": "11",
+          "id": 47
+        }
+      },
+      "date_modified": "2024-01-17T12:39:49.261411+02:00"
+    },
+    "TrackFBlue": {
+      "status": "waiting",
+      "start_date": "2024-03-22",
+      "stop_date": null,
+      "difficulty": "blue",
+      "info": {
+        "notes": [],
+        "bottom_height": "1075",
+        "distance": "294",
+        "name": "F",
+        "top_height": "1112",
+        "lift": {
+          "name": "8",
+          "id": 33
+        }
+      },
+      "date_modified": "2024-03-20T11:43:06.315325+02:00"
+    },
+    "Track13EBlue": {
+      "status": "open",
+      "start_date": "2023-12-09",
+      "stop_date": null,
+      "difficulty": "blue",
+      "info": {
+        "notes": [],
+        "bottom_height": "929",
+        "distance": "1338",
+        "name": "13E",
+        "top_height": "1149",
+        "lift": {
+          "name": "13",
+          "id": 45
+        }
+      },
+      "date_modified": "2023-12-10T00:12:01.077813+02:00"
+    },
+    "TrackJBlue": {
+      "status": "open",
+      "start_date": "2023-12-09",
+      "stop_date": null,
+      "difficulty": "blue",
+      "info": {
+        "notes": [],
+        "bottom_height": "980",
+        "distance": "221",
+        "name": "J",
+        "top_height": "1015",
+        "lift": {
+          "name": "13",
+          "id": 45
+        }
+      },
+      "date_modified": "2023-12-10T00:12:37.917438+02:00"
+    },
+    "Track2BRed": {
+      "status": "close",
+      "start_date": null,
+      "stop_date": null,
+      "difficulty": "red",
+      "info": {
+        "notes": [],
+        "bottom_height": "890",
+        "distance": "1459",
+        "name": "2B",
+        "top_height": "1115",
+        "lift": {
+          "name": "2R",
+          "id": 39
+        }
+      },
+      "date_modified": "2022-12-21T16:58:31.315368+02:00"
+    },
+    "Track5BBlue": {
+      "status": "open",
+      "start_date": "2023-12-01",
+      "stop_date": null,
+      "difficulty": "blue",
+      "info": {
+        "notes": [],
+        "bottom_height": "1105",
+        "distance": "1446",
+        "name": "5B",
+        "top_height": "1236",
+        "lift": {
+          "name": "5",
+          "id": 36
+        }
+      },
+      "date_modified": "2023-12-02T00:11:19.978128+02:00"
+    },
+    "Track7BBlue": {
+      "status": "close",
+      "start_date": null,
+      "stop_date": null,
+      "difficulty": "blue",
+      "info": {
+        "notes": [],
+        "bottom_height": "898",
+        "distance": "867",
+        "name": "7B",
+        "top_height": "976",
+        "lift": {
+          "name": "7",
+          "id": 34
+        }
+      },
+      "date_modified": "2022-12-21T17:05:33.100182+02:00"
+    },
+    "Track2ARed": {
+      "status": "open",
+      "start_date": "2023-12-08",
+      "stop_date": null,
+      "difficulty": "red",
+      "info": {
+        "notes": [],
+        "bottom_height": "897",
+        "distance": "915",
+        "name": "2A",
+        "top_height": "1110",
+        "lift": {
+          "name": "2R",
+          "id": 39
+        }
+      },
+      "date_modified": "2023-12-21T12:23:16.130918+02:00"
+    },
+    "Track13DRed": {
+      "status": "open",
+      "start_date": "2024-01-18",
+      "stop_date": null,
+      "difficulty": "red",
+      "info": {
+        "notes": [],
+        "bottom_height": "929",
+        "distance": "1279",
+        "name": "13D",
+        "top_height": "1149",
+        "lift": {
+          "name": "13",
+          "id": 45
+        }
+      },
+      "date_modified": "2024-01-18T02:14:02.087747+02:00"
+    },
+    "Track5CRed": {
+      "status": "close",
+      "start_date": null,
+      "stop_date": null,
+      "difficulty": "red",
+      "info": {
+        "notes": [],
+        "bottom_height": "1105",
+        "distance": "340",
+        "name": "5C",
+        "top_height": "1195",
+        "lift": {
+          "name": "5",
+          "id": 36
+        }
+      },
+      "date_modified": "2022-12-21T16:58:21.548544+02:00"
+    },
+    "Track15DRed": {
+      "status": "close",
+      "start_date": null,
+      "stop_date": null,
+      "difficulty": "red",
+      "info": {
+        "notes": [],
+        "bottom_height": "950",
+        "distance": "500",
+        "name": "15D",
+        "top_height": "1089",
+        "lift": {
+          "name": "15",
+          "id": 43
+        }
+      },
+      "date_modified": "2024-01-17T12:56:42.088120+02:00"
+    },
+    "Track5KBlue": {
+      "status": "open",
+      "start_date": "2023-12-21",
+      "stop_date": null,
+      "difficulty": "blue",
+      "info": {
+        "notes": [],
+        "bottom_height": "896",
+        "distance": "2625",
+        "name": "5K",
+        "top_height": "1276",
+        "lift": {
+          "name": "5",
+          "id": 36
+        }
+      },
+      "date_modified": "2023-12-22T11:18:14.397778+02:00"
+    },
+    "TrackERed": {
+      "status": "open",
+      "start_date": "2023-12-09",
+      "stop_date": null,
+      "difficulty": "red",
+      "info": {
+        "notes": [],
+        "bottom_height": "940",
+        "distance": "282",
+        "name": "E",
+        "top_height": "960",
+        "lift": {
+          "name": "5",
+          "id": 36
+        }
+      },
+      "date_modified": "2023-12-10T00:33:44.782868+02:00"
+    },
+    "TrackBBlue": {
+      "status": "open",
+      "start_date": "2023-12-01",
+      "stop_date": null,
+      "difficulty": "blue",
+      "info": {
+        "notes": [],
+        "bottom_height": "895",
+        "distance": "40",
+        "name": "B",
+        "top_height": "915",
+        "lift": {
+          "name": "2R",
+          "id": 39
+        }
+      },
+      "date_modified": "2023-12-02T11:55:42.053306+02:00"
+    },
+    "Track7CBlue": {
+      "status": "close",
+      "start_date": null,
+      "stop_date": null,
+      "difficulty": "blue",
+      "info": {
+        "notes": [],
+        "bottom_height": "900",
+        "distance": "",
+        "name": "7C",
+        "top_height": "1000",
+        "lift": {
+          "name": "7",
+          "id": 34
+        }
+      },
+      "date_modified": "2024-03-04T20:13:17.275947+02:00"
+    },
+    "Track12CRed": {
+      "status": "close",
+      "start_date": null,
+      "stop_date": null,
+      "difficulty": "red",
+      "info": {
+        "notes": [
+          {
+            "id": 2,
+            "text": "Траса для фрі-райду"
+          }
+        ],
+        "bottom_height": "1192",
+        "distance": "696",
+        "name": "12C",
+        "top_height": "1305",
+        "lift": {
+          "name": "12",
+          "id": 46
+        }
+      },
+      "date_modified": "2024-03-11T18:43:17.567896+02:00"
+    },
+    "TrackGBlue": {
+      "status": "close",
+      "start_date": null,
+      "stop_date": null,
+      "difficulty": "blue",
+      "info": {
+        "notes": [],
+        "bottom_height": "1083",
+        "distance": "480",
+        "name": "G",
+        "top_height": "1103",
+        "lift": {
+          "name": "8",
+          "id": 33
+        }
+      },
+      "date_modified": "2024-03-17T19:33:44.594795+02:00"
+    },
+    "Track5HBlack": {
+      "status": "open",
+      "start_date": "2023-12-22",
+      "stop_date": null,
+      "difficulty": "black",
+      "info": {
+        "notes": [],
+        "bottom_height": "937",
+        "distance": "1549",
+        "name": "5H",
+        "top_height": "1236",
+        "lift": {
+          "name": "5",
+          "id": 36
+        }
+      },
+      "date_modified": "2023-12-22T00:58:07.300537+02:00"
+    },
+    "TrackKBlue": {
+      "status": "close",
+      "start_date": null,
+      "stop_date": null,
+      "difficulty": "blue",
+      "info": {
+        "notes": [],
+        "bottom_height": "990",
+        "distance": "632",
+        "name": "K",
+        "top_height": "1145",
+        "lift": {
+          "name": "14",
+          "id": 44
+        }
+      },
+      "date_modified": "2024-03-14T11:02:26.217744+02:00"
     },
     "Track5DRed": {
       "status": "close",
@@ -880,11 +1191,11 @@
       "stop_date": null,
       "difficulty": "red",
       "info": {
-        "bottom_height": "905",
-        "name": "5D",
         "notes": [],
-        "top_height": "1048",
+        "bottom_height": "905",
         "distance": "700",
+        "name": "5D",
+        "top_height": "1048",
         "lift": {
           "name": "5",
           "id": 36
@@ -898,11 +1209,11 @@
       "stop_date": null,
       "difficulty": "blue",
       "info": {
-        "bottom_height": "890",
-        "name": "2C",
         "notes": [],
-        "top_height": "1115",
+        "bottom_height": "890",
         "distance": "1759",
+        "name": "2C",
+        "top_height": "1115",
         "lift": {
           "name": "2R",
           "id": 39
@@ -910,560 +1221,67 @@
       },
       "date_modified": "2023-12-02T00:11:40.477989+02:00"
     },
-    "Track3DBlue": {
-      "status": "open",
-      "start_date": "2023-12-14",
-      "stop_date": null,
-      "difficulty": "blue",
-      "info": {
-        "bottom_height": "902",
-        "name": "3D",
-        "notes": [],
-        "top_height": "1126",
-        "distance": "2000",
-        "lift": {
-          "name": "3",
-          "id": 49
-        }
-      },
-      "date_modified": "2023-12-14T23:53:41.174533+02:00"
-    },
-    "Track22ABlack": {
-      "status": "close",
-      "start_date": null,
-      "stop_date": null,
-      "difficulty": "black",
-      "info": {
-        "bottom_height": "962",
-        "name": "22A",
-        "notes": [],
-        "top_height": "1135",
-        "distance": "501",
-        "lift": {
-          "name": "22",
-          "id": 38
-        }
-      },
-      "date_modified": "2024-01-17T13:00:41.981085+02:00"
-    },
-    "Track5ABlue": {
-      "status": "open",
-      "start_date": "2023-12-01",
-      "stop_date": null,
-      "difficulty": "blue",
-      "info": {
-        "bottom_height": "895",
-        "name": "5A",
-        "notes": [],
-        "top_height": "1105",
-        "distance": "1794",
-        "lift": {
-          "name": "5",
-          "id": 36
-        }
-      },
-      "date_modified": "2023-12-02T00:11:16.582343+02:00"
-    },
-    "Track22CBlue": {
-      "status": "close",
-      "start_date": null,
-      "stop_date": null,
-      "difficulty": "blue",
-      "info": {
-        "bottom_height": "960",
-        "name": "22C",
-        "notes": [],
-        "top_height": "1180",
-        "distance": "1700",
-        "lift": {
-          "name": "22",
-          "id": 38
-        }
-      },
-      "date_modified": "2022-12-21T17:05:27.285631+02:00"
-    },
-    "Track2BRed": {
-      "status": "close",
-      "start_date": null,
-      "stop_date": null,
-      "difficulty": "red",
-      "info": {
-        "bottom_height": "890",
-        "name": "2B",
-        "notes": [],
-        "top_height": "1115",
-        "distance": "1459",
-        "lift": {
-          "name": "2R",
-          "id": 39
-        }
-      },
-      "date_modified": "2022-12-21T16:58:31.315368+02:00"
-    },
-    "Track14ABlue": {
-      "status": "open",
-      "start_date": "2023-12-09",
-      "stop_date": null,
-      "difficulty": "blue",
-      "info": {
-        "bottom_height": "899",
-        "name": "14A",
-        "notes": [],
-        "top_height": "1189",
-        "distance": "2132",
-        "lift": {
-          "name": "14",
-          "id": 44
-        }
-      },
-      "date_modified": "2023-12-10T00:12:07.604177+02:00"
-    },
-    "Track7CBlue": {
-      "status": "open",
-      "start_date": "2023-12-26",
-      "stop_date": null,
-      "difficulty": "blue",
-      "info": {
-        "bottom_height": "900",
-        "name": "7C",
-        "notes": [],
-        "top_height": "1000",
-        "distance": "",
-        "lift": {
-          "name": "7",
-          "id": 34
-        }
-      },
-      "date_modified": "2023-12-27T09:20:37.593095+02:00"
-    },
-    "Track5FBlack": {
-      "status": "close",
-      "start_date": null,
-      "stop_date": null,
-      "difficulty": "black",
-      "info": {
-        "bottom_height": "900",
-        "name": "5F",
-        "notes": [],
-        "top_height": "1135",
-        "distance": "768",
-        "lift": {
-          "name": "5",
-          "id": 36
-        }
-      },
-      "date_modified": "2022-12-21T16:58:19.822304+02:00"
-    },
     "Track13CRed": {
       "status": "open",
       "start_date": "2024-01-16",
       "stop_date": null,
       "difficulty": "red",
       "info": {
-        "bottom_height": "940",
-        "name": "13C",
         "notes": [],
-        "top_height": "1075",
+        "bottom_height": "940",
         "distance": "570",
+        "name": "13C",
+        "top_height": "1075",
         "lift": {
           "name": "13",
           "id": 45
         }
       },
       "date_modified": "2024-01-17T12:14:38.272292+02:00"
-    },
-    "TrackGBlue": {
-      "status": "open",
-      "start_date": "2023-12-13",
-      "stop_date": null,
-      "difficulty": "blue",
-      "info": {
-        "bottom_height": "1083",
-        "name": "G",
-        "notes": [],
-        "top_height": "1103",
-        "distance": "480",
-        "lift": {
-          "name": "8",
-          "id": 33
-        }
-      },
-      "date_modified": "2023-12-13T23:51:23.461317+02:00"
-    },
-    "Track13EBlue": {
-      "status": "open",
-      "start_date": "2023-12-09",
-      "stop_date": null,
-      "difficulty": "blue",
-      "info": {
-        "bottom_height": "929",
-        "name": "13E",
-        "notes": [],
-        "top_height": "1149",
-        "distance": "1338",
-        "lift": {
-          "name": "13",
-          "id": 45
-        }
-      },
-      "date_modified": "2023-12-10T00:12:01.077813+02:00"
-    },
-    "TrackERed": {
-      "status": "open",
-      "start_date": "2023-12-09",
-      "stop_date": null,
-      "difficulty": "red",
-      "info": {
-        "bottom_height": "940",
-        "name": "E",
-        "notes": [],
-        "top_height": "960",
-        "distance": "282",
-        "lift": {
-          "name": "5",
-          "id": 36
-        }
-      },
-      "date_modified": "2023-12-10T00:33:44.782868+02:00"
-    },
-    "Track5EBlack": {
-      "status": "open",
-      "start_date": "2024-01-21",
-      "stop_date": null,
-      "difficulty": "black",
-      "info": {
-        "bottom_height": "970",
-        "name": "5E",
-        "notes": [
-          {
-            "id": 6,
-            "text": "Працює виключно для професійних спортсменів"
-          }
-        ],
-        "top_height": "1050",
-        "distance": "960",
-        "lift": {
-          "name": "5",
-          "id": 36
-        }
-      },
-      "date_modified": "2024-01-21T11:21:46.286173+02:00"
-    },
-    "TrackURed": {
-      "status": "close",
-      "start_date": null,
-      "stop_date": null,
-      "difficulty": "red",
-      "info": {
-        "bottom_height": "959",
-        "name": "U",
-        "notes": [],
-        "top_height": "990",
-        "distance": "330",
-        "lift": {
-          "name": "13",
-          "id": 45
-        }
-      },
-      "date_modified": "2022-12-21T17:05:12.014371+02:00"
-    },
-    "Track13BRed": {
-      "status": "close",
-      "start_date": null,
-      "stop_date": null,
-      "difficulty": "red",
-      "info": {
-        "bottom_height": "950",
-        "name": "13B",
-        "notes": [],
-        "top_height": "1110",
-        "distance": "650",
-        "lift": {
-          "name": "13",
-          "id": 45
-        }
-      },
-      "date_modified": "2022-04-05T16:00:18.812074+03:00"
-    },
-    "Track5HBlack": {
-      "status": "open",
-      "start_date": "2023-12-22",
-      "stop_date": null,
-      "difficulty": "black",
-      "info": {
-        "bottom_height": "937",
-        "name": "5H",
-        "notes": [],
-        "top_height": "1236",
-        "distance": "1549",
-        "lift": {
-          "name": "5",
-          "id": 36
-        }
-      },
-      "date_modified": "2023-12-22T00:58:07.300537+02:00"
-    },
-    "Track5BBlue": {
-      "status": "open",
-      "start_date": "2023-12-01",
-      "stop_date": null,
-      "difficulty": "blue",
-      "info": {
-        "bottom_height": "1105",
-        "name": "5B",
-        "notes": [],
-        "top_height": "1236",
-        "distance": "1446",
-        "lift": {
-          "name": "5",
-          "id": 36
-        }
-      },
-      "date_modified": "2023-12-02T00:11:19.978128+02:00"
-    },
-    "TrackKBlue": {
-      "status": "open",
-      "start_date": "2023-12-09",
-      "stop_date": null,
-      "difficulty": "blue",
-      "info": {
-        "bottom_height": "990",
-        "name": "K",
-        "notes": [],
-        "top_height": "1145",
-        "distance": "632",
-        "lift": {
-          "name": "14",
-          "id": 44
-        }
-      },
-      "date_modified": "2023-12-10T00:12:42.740722+02:00"
     }
   },
   "liftsData": {
-    "Lift1": {
-      "isOpen": true,
-      "start_date": "2023-12-07",
-      "stop_date": null,
-      "info": {
-        "bottom_height": "859",
-        "name": "1",
-        "top_height": "1127",
-        "distance": "740",
-        "type": "4SEAT",
-        "traffic": "2400"
-      },
-      "date_modified": "2023-12-07T10:37:24.797186+02:00"
-    },
-    "Lift15": {
-      "isOpen": true,
-      "start_date": "2024-02-02",
-      "stop_date": null,
-      "info": {
-        "bottom_height": "925",
-        "name": "15",
-        "top_height": "1180",
-        "distance": "1159",
-        "type": "4SEAT",
-        "traffic": "2400"
-      },
-      "date_modified": "2024-02-02T08:07:16.354337+02:00"
-    },
-    "Lift16": {
-      "isOpen": true,
-      "start_date": "2024-01-11",
-      "stop_date": null,
-      "info": {
-        "bottom_height": "950",
-        "name": "16",
-        "top_height": "1210",
-        "distance": "847",
-        "type": "4SEAT",
-        "traffic": "2400"
-      },
-      "date_modified": "2024-01-12T23:54:56.296287+02:00"
-    },
-    "LiftM": {
-      "isOpen": true,
-      "start_date": "2023-12-13",
-      "stop_date": null,
-      "info": {
-        "bottom_height": "900",
-        "name": "M",
-        "top_height": "950",
-        "distance": "",
-        "type": "BUGIL",
-        "traffic": ""
-      },
-      "date_modified": "2023-12-14T09:36:30.487545+02:00"
-    },
-    "Lift12": {
-      "isOpen": true,
-      "start_date": "2023-12-02",
-      "stop_date": null,
-      "info": {
-        "bottom_height": "966",
-        "name": "12",
-        "top_height": "1372",
-        "distance": "1024",
-        "type": "4SEAT",
-        "traffic": "2400"
-      },
-      "date_modified": "2023-12-02T00:01:43.916379+02:00"
-    },
-    "Lift8": {
-      "isOpen": true,
-      "start_date": "2023-12-13",
-      "stop_date": null,
-      "info": {
-        "bottom_height": "925",
-        "name": "8",
-        "top_height": "1100",
-        "distance": "859",
-        "type": "4SEAT",
-        "traffic": "2400"
-      },
-      "date_modified": "2023-12-13T23:51:03.110193+02:00"
-    },
-    "Lift2": {
-      "isOpen": true,
-      "start_date": "2023-11-28",
-      "stop_date": "2024-03-31",
-      "info": {
-        "bottom_height": "900",
-        "name": "2",
-        "top_height": "1115",
-        "distance": "1000",
-        "type": "2SEAT",
-        "traffic": "808"
-      },
-      "date_modified": "2023-11-29T17:32:47.496609+02:00"
-    },
-    "Lift14": {
-      "isOpen": true,
-      "start_date": "2023-12-09",
-      "stop_date": null,
-      "info": {
-        "bottom_height": "960",
-        "name": "14",
-        "top_height": "1180",
-        "distance": "1947",
-        "type": "4SEAT",
-        "traffic": "2800"
-      },
-      "date_modified": "2023-12-10T00:11:16.977636+02:00"
-    },
-    "Lift11": {
-      "isOpen": true,
-      "start_date": "2023-12-12",
-      "stop_date": null,
-      "info": {
-        "bottom_height": "925",
-        "name": "11",
-        "top_height": "1210",
-        "distance": "1163",
-        "type": "4SEAT",
-        "traffic": "2800"
-      },
-      "date_modified": "2023-12-12T23:58:28.502894+02:00"
-    },
     "Lift6": {
       "isOpen": false,
       "start_date": null,
       "stop_date": null,
       "info": {
         "bottom_height": "900",
-        "name": "6",
-        "top_height": "1114",
         "distance": "723",
-        "type": "BUGIL",
-        "traffic": "1300"
+        "name": "6",
+        "traffic": "1300",
+        "top_height": "1114",
+        "type": "BUGIL"
       },
       "date_modified": "2023-12-02T00:01:32.028230+02:00"
     },
-    "Lift5": {
-      "isOpen": true,
-      "start_date": "2023-12-02",
-      "stop_date": null,
-      "info": {
-        "bottom_height": "910",
-        "name": "5",
-        "top_height": "1246",
-        "distance": "1548",
-        "type": "4SEAT",
-        "traffic": "2800"
-      },
-      "date_modified": "2023-12-02T00:01:22.679258+02:00"
-    },
-    "Lift9": {
-      "isOpen": true,
-      "start_date": "2023-12-09",
-      "stop_date": null,
-      "info": {
-        "bottom_height": "1000",
-        "name": "9",
-        "top_height": "1150",
-        "distance": "1100",
-        "type": "3SEAT",
-        "traffic": "1800"
-      },
-      "date_modified": "2023-12-10T00:11:05.948739+02:00"
-    },
-    "Lift22": {
+    "Lift3": {
       "isOpen": false,
       "start_date": null,
       "stop_date": null,
       "info": {
-        "bottom_height": "960",
-        "name": "22",
-        "top_height": "1180",
-        "distance": "652",
-        "type": "4SEAT",
-        "traffic": "2400"
+        "bottom_height": "902",
+        "distance": "850",
+        "name": "3",
+        "traffic": "",
+        "top_height": "1126",
+        "type": "6SEAT"
       },
-      "date_modified": "2023-03-27T12:32:38.598167+03:00"
+      "date_modified": "2024-03-11T18:42:43.536838+02:00"
     },
-    "Lift7R": {
+    "Lift1": {
       "isOpen": true,
-      "start_date": "2024-01-30",
+      "start_date": "2023-12-07",
       "stop_date": null,
       "info": {
-        "bottom_height": "900",
-        "name": "7R",
-        "top_height": "1000",
-        "distance": "",
-        "type": "BUGIL",
-        "traffic": ""
-      },
-      "date_modified": "2024-01-31T01:21:41.601192+02:00"
-    },
-    "Lift7": {
-      "isOpen": true,
-      "start_date": "2023-12-02",
-      "stop_date": null,
-      "info": {
-        "bottom_height": "900",
-        "name": "7",
-        "top_height": "1012",
-        "distance": "957",
-        "type": "4SEAT",
-        "traffic": "2400"
-      },
-      "date_modified": "2023-12-02T00:01:33.874439+02:00"
-    },
-    "Lift2R": {
-      "isOpen": true,
-      "start_date": "2023-12-02",
-      "stop_date": null,
-      "info": {
-        "bottom_height": "900",
-        "name": "2R",
+        "bottom_height": "859",
+        "distance": "740",
+        "name": "1",
+        "traffic": "2400",
         "top_height": "1127",
-        "distance": "1067",
-        "type": "4SEAT",
-        "traffic": "2400"
+        "type": "4SEAT"
       },
-      "date_modified": "2023-12-02T00:01:12.441290+02:00"
+      "date_modified": "2023-12-07T10:37:24.797186+02:00"
     },
     "Lift13": {
       "isOpen": true,
@@ -1471,13 +1289,139 @@
       "stop_date": null,
       "info": {
         "bottom_height": "925",
-        "name": "13",
-        "top_height": "1150",
         "distance": "1181",
-        "type": "4SEAT",
-        "traffic": "2800"
+        "name": "13",
+        "traffic": "2800",
+        "top_height": "1150",
+        "type": "4SEAT"
       },
       "date_modified": "2023-12-10T00:11:12.881431+02:00"
+    },
+    "Lift2": {
+      "isOpen": true,
+      "start_date": "2023-11-28",
+      "stop_date": "2024-03-31",
+      "info": {
+        "bottom_height": "900",
+        "distance": "1000",
+        "name": "2",
+        "traffic": "808",
+        "top_height": "1115",
+        "type": "2SEAT"
+      },
+      "date_modified": "2023-11-29T17:32:47.496609+02:00"
+    },
+    "Lift15": {
+      "isOpen": false,
+      "start_date": null,
+      "stop_date": null,
+      "info": {
+        "bottom_height": "925",
+        "distance": "1159",
+        "name": "15",
+        "traffic": "2400",
+        "top_height": "1180",
+        "type": "4SEAT"
+      },
+      "date_modified": "2024-03-11T08:58:35.287611+02:00"
+    },
+    "Lift5": {
+      "isOpen": true,
+      "start_date": "2023-12-02",
+      "stop_date": null,
+      "info": {
+        "bottom_height": "910",
+        "distance": "1548",
+        "name": "5",
+        "traffic": "2800",
+        "top_height": "1246",
+        "type": "4SEAT"
+      },
+      "date_modified": "2023-12-02T00:01:22.679258+02:00"
+    },
+    "Lift14": {
+      "isOpen": false,
+      "start_date": null,
+      "stop_date": null,
+      "info": {
+        "bottom_height": "960",
+        "distance": "1947",
+        "name": "14",
+        "traffic": "2800",
+        "top_height": "1180",
+        "type": "4SEAT"
+      },
+      "date_modified": "2024-03-13T19:32:24.499181+02:00"
+    },
+    "Lift22": {
+      "isOpen": false,
+      "start_date": null,
+      "stop_date": null,
+      "info": {
+        "bottom_height": "960",
+        "distance": "652",
+        "name": "22",
+        "traffic": "2400",
+        "top_height": "1180",
+        "type": "4SEAT"
+      },
+      "date_modified": "2023-03-27T12:32:38.598167+03:00"
+    },
+    "Lift8": {
+      "isOpen": false,
+      "start_date": "2024-03-22",
+      "stop_date": null,
+      "info": {
+        "bottom_height": "925",
+        "distance": "859",
+        "name": "8",
+        "traffic": "2400",
+        "top_height": "1100",
+        "type": "4SEAT"
+      },
+      "date_modified": "2024-03-20T11:41:07.096557+02:00"
+    },
+    "Lift11": {
+      "isOpen": false,
+      "start_date": "2024-03-22",
+      "stop_date": null,
+      "info": {
+        "bottom_height": "925",
+        "distance": "1163",
+        "name": "11",
+        "traffic": "2800",
+        "top_height": "1210",
+        "type": "4SEAT"
+      },
+      "date_modified": "2024-03-20T11:41:10.511230+02:00"
+    },
+    "Lift2R": {
+      "isOpen": true,
+      "start_date": "2023-12-02",
+      "stop_date": null,
+      "info": {
+        "bottom_height": "900",
+        "distance": "1067",
+        "name": "2R",
+        "traffic": "2400",
+        "top_height": "1127",
+        "type": "4SEAT"
+      },
+      "date_modified": "2023-12-02T00:01:12.441290+02:00"
+    },
+    "LiftM": {
+      "isOpen": false,
+      "start_date": null,
+      "stop_date": null,
+      "info": {
+        "bottom_height": "900",
+        "distance": "",
+        "name": "M",
+        "traffic": "",
+        "top_height": "950",
+        "type": "BUGIL"
+      },
+      "date_modified": "2024-03-11T09:08:53.569170+02:00"
     },
     "Lift17": {
       "isOpen": true,
@@ -1485,28 +1429,211 @@
       "stop_date": null,
       "info": {
         "bottom_height": "944",
-        "name": "17",
-        "top_height": "1146",
         "distance": "612",
-        "type": "4SEAT",
-        "traffic": "2400"
+        "name": "17",
+        "traffic": "2400",
+        "top_height": "1146",
+        "type": "4SEAT"
       },
       "date_modified": "2023-12-02T12:39:33.582202+02:00"
     },
-    "Lift3": {
-      "isOpen": true,
-      "start_date": "2023-12-14",
+    "Lift9": {
+      "isOpen": false,
+      "start_date": null,
       "stop_date": null,
       "info": {
-        "bottom_height": "902",
-        "name": "3",
-        "top_height": "1126",
-        "distance": "850",
-        "type": "6SEAT",
-        "traffic": ""
+        "bottom_height": "1000",
+        "distance": "1100",
+        "name": "9",
+        "traffic": "1800",
+        "top_height": "1150",
+        "type": "3SEAT"
       },
-      "date_modified": "2023-12-14T23:53:21.318558+02:00"
+      "date_modified": "2024-03-04T20:14:53.061311+02:00"
+    },
+    "Lift7R": {
+      "isOpen": false,
+      "start_date": null,
+      "stop_date": null,
+      "info": {
+        "bottom_height": "900",
+        "distance": "",
+        "name": "7R",
+        "traffic": "",
+        "top_height": "1000",
+        "type": "BUGIL"
+      },
+      "date_modified": "2024-03-04T20:14:59.426236+02:00"
+    },
+    "Lift7": {
+      "isOpen": true,
+      "start_date": "2023-12-02",
+      "stop_date": null,
+      "info": {
+        "bottom_height": "900",
+        "distance": "957",
+        "name": "7",
+        "traffic": "2400",
+        "top_height": "1012",
+        "type": "4SEAT"
+      },
+      "date_modified": "2023-12-02T00:01:33.874439+02:00"
+    },
+    "Lift16": {
+      "isOpen": false,
+      "start_date": "2024-03-22",
+      "stop_date": null,
+      "info": {
+        "bottom_height": "950",
+        "distance": "847",
+        "name": "16",
+        "traffic": "2400",
+        "top_height": "1210",
+        "type": "4SEAT"
+      },
+      "date_modified": "2024-03-20T11:41:13.514054+02:00"
+    },
+    "Lift12": {
+      "isOpen": true,
+      "start_date": "2023-12-02",
+      "stop_date": null,
+      "info": {
+        "bottom_height": "966",
+        "distance": "1024",
+        "name": "12",
+        "traffic": "2400",
+        "top_height": "1372",
+        "type": "4SEAT"
+      },
+      "date_modified": "2023-12-02T00:01:43.916379+02:00"
     }
   },
-  "waitingTracksData": []
+  "waitingTracksData": [
+    {
+      "tracks": [
+        {
+          "Track16CBlack": {
+            "status": "waiting",
+            "start_date": "2024-03-22",
+            "stop_date": null,
+            "difficulty": "black",
+            "info": {
+              "notes": [],
+              "bottom_height": "957",
+              "distance": "964",
+              "name": "16C",
+              "top_height": "1195",
+              "lift": {
+                "name": "16",
+                "id": 42
+              }
+            },
+            "date_modified": "2024-03-20T11:42:54.785159+02:00"
+          }
+        },
+        {
+          "Track16ARed": {
+            "status": "waiting",
+            "start_date": "2024-03-22",
+            "stop_date": null,
+            "difficulty": "red",
+            "info": {
+              "notes": [],
+              "bottom_height": "961",
+              "distance": "1741",
+              "name": "16A",
+              "top_height": "1205",
+              "lift": {
+                "name": "16",
+                "id": 42
+              }
+            },
+            "date_modified": "2024-03-20T11:56:00.659702+02:00"
+          }
+        },
+        {
+          "Track8CRed": {
+            "status": "waiting",
+            "start_date": "2024-03-22",
+            "stop_date": null,
+            "difficulty": "red",
+            "info": {
+              "notes": [],
+              "bottom_height": "955",
+              "distance": "750",
+              "name": "8C",
+              "top_height": "1105",
+              "lift": {
+                "name": "8",
+                "id": 33
+              }
+            },
+            "date_modified": "2024-03-20T11:42:16.185822+02:00"
+          }
+        },
+        {
+          "Track11FBlue": {
+            "status": "waiting",
+            "start_date": "2024-03-22",
+            "stop_date": null,
+            "difficulty": "blue",
+            "info": {
+              "notes": [],
+              "bottom_height": "931",
+              "distance": "2065",
+              "name": "11F",
+              "top_height": "1202",
+              "lift": {
+                "name": "11",
+                "id": 47
+              }
+            },
+            "date_modified": "2024-03-20T11:42:31.917069+02:00"
+          }
+        },
+        {
+          "TrackFBlue": {
+            "status": "waiting",
+            "start_date": "2024-03-22",
+            "stop_date": null,
+            "difficulty": "blue",
+            "info": {
+              "notes": [],
+              "bottom_height": "1075",
+              "distance": "294",
+              "name": "F",
+              "top_height": "1112",
+              "lift": {
+                "name": "8",
+                "id": 33
+              }
+            },
+            "date_modified": "2024-03-20T11:43:06.315325+02:00"
+          }
+        },
+        {
+          "Track8DBlue": {
+            "status": "waiting",
+            "start_date": "2024-03-22",
+            "stop_date": null,
+            "difficulty": "blue",
+            "info": {
+              "notes": [],
+              "bottom_height": "931",
+              "distance": "1420",
+              "name": "8D",
+              "top_height": "1117",
+              "lift": {
+                "name": "8",
+                "id": 33
+              }
+            },
+            "date_modified": "2024-03-20T11:42:19.827897+02:00"
+          }
+        }
+      ],
+      "title": "Estimated opening",
+      "date": "2024-03-22"
+    }
+  ]
 }
