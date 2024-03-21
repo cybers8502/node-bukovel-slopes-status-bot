@@ -1,4 +1,4 @@
-const {DB_ROOT, MAP_URL, SLOPES_STATUS_URL} = require('../common-consts');
+const {DB_ROOT, MAP_URL} = require('../common-consts');
 const {getExternalData} = require('../services/fetchSlopesDataService');
 const {getFirebaseData, removeFirebaseRecord, updateFirebaseRecord} = require('../services/firebaseService');
 const {sendTelegramMessage, sendTelegramPhoto} = require('../services/sendTelegramMessageService');
