@@ -35,17 +35,6 @@ const compareAndSendMessage = async () => {
       }
     }
 
-    if (
-      (externalData?.waitingTracksData.length > 0 && !firebaseData.waitingTracksData) ||
-      externalData?.waitingTracksData?.length !== firebaseData?.waitingTracksData.length
-    ) {
-      collectMessages += compareWaitingTracksData(
-        externalData.waitingTracksData,
-        firebaseData.waitingTracksData,
-      );
-      await updateFirebaseRecord(`${DB_ROOT}waitingTracksData`, externalData.waitingTracksData);
-    }
-
     if (collectMessages) {
       const buffer = await takeWebpageScreenshotService({
         url: MAP_URL,
@@ -56,7 +45,7 @@ const compareAndSendMessage = async () => {
       const sendMessages = async (chatID) => {
         try {
           await sendTelegramMessage(chatID, collectMessages);
-          await sendTelegramPhoto(chatID, buffer);
+          buffer && (await sendTelegramPhoto(chatID, buffer));
         } catch {
           await removeFirebaseRecord(`${DB_ROOT}subscribedChanel/${chatID}`);
         }
