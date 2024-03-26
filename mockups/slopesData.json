@@ -16,7 +16,7 @@
           "id": 44
         }
       },
-      "date_modified": "2025-03-13T19:32:47.297407+02:00"
+      "date_modified": "2024-03-13T19:32:47.297407+02:00"
     },
     "Track5EBlack": {
       "status": "open",
@@ -42,7 +42,7 @@
       "date_modified": "2024-01-21T11:21:46.286173+02:00"
     },
     "Track11ERed": {
-      "status": "waiting",
+      "status": "open",
       "start_date": "2024-03-22",
       "stop_date": null,
       "difficulty": "red",
@@ -57,7 +57,7 @@
           "id": 47
         }
       },
-      "date_modified": "2024-03-20T11:42:37.082824+02:00"
+      "date_modified": "2024-03-22T08:45:39.034851+02:00"
     },
     "Track16DBlack": {
       "status": "close",
@@ -204,7 +204,7 @@
       "date_modified": "2022-04-05T16:00:07.525845+03:00"
     },
     "Track16ARed": {
-      "status": "waiting",
+      "status": "open",
       "start_date": "2024-03-22",
       "stop_date": null,
       "difficulty": "red",
@@ -219,7 +219,7 @@
           "id": 42
         }
       },
-      "date_modified": "2024-03-20T11:56:00.659702+02:00"
+      "date_modified": "2024-03-22T08:46:09.957008+02:00"
     },
     "Track11ARed": {
       "status": "close",
@@ -587,7 +587,7 @@
       "date_modified": "2022-12-21T17:04:41.129307+02:00"
     },
     "Track11FBlue": {
-      "status": "waiting",
+      "status": "open",
       "start_date": "2024-03-22",
       "stop_date": null,
       "difficulty": "blue",
@@ -602,7 +602,7 @@
           "id": 47
         }
       },
-      "date_modified": "2024-03-20T11:42:31.917069+02:00"
+      "date_modified": "2024-03-22T08:45:45.154018+02:00"
     },
     "Track1CBlue": {
       "status": "open",
@@ -677,7 +677,7 @@
       "date_modified": "2022-12-21T17:05:27.285631+02:00"
     },
     "Track16CBlack": {
-      "status": "waiting",
+      "status": "open",
       "start_date": "2024-03-22",
       "stop_date": null,
       "difficulty": "black",
@@ -692,7 +692,7 @@
           "id": 42
         }
       },
-      "date_modified": "2024-03-20T11:42:54.785159+02:00"
+      "date_modified": "2024-03-22T08:46:03.688960+02:00"
     },
     "Track5ABlue": {
       "status": "open",
@@ -749,7 +749,7 @@
       "date_modified": "2022-12-21T16:58:24.779603+02:00"
     },
     "Track8CRed": {
-      "status": "waiting",
+      "status": "open",
       "start_date": "2024-03-22",
       "stop_date": null,
       "difficulty": "red",
@@ -764,7 +764,7 @@
           "id": 33
         }
       },
-      "date_modified": "2024-03-20T11:42:16.185822+02:00"
+      "date_modified": "2024-03-22T08:45:12.846143+02:00"
     },
     "Track1EBlue": {
       "status": "open",
@@ -785,7 +785,7 @@
       "date_modified": "2023-12-09T09:37:04.701083+02:00"
     },
     "Track8DBlue": {
-      "status": "waiting",
+      "status": "open",
       "start_date": "2024-03-22",
       "stop_date": null,
       "difficulty": "blue",
@@ -800,7 +800,7 @@
           "id": 33
         }
       },
-      "date_modified": "2024-03-20T11:42:19.827897+02:00"
+      "date_modified": "2024-03-22T08:45:18.609632+02:00"
     },
     "Track8BRed": {
       "status": "close",
@@ -857,7 +857,7 @@
       "date_modified": "2024-01-17T12:39:49.261411+02:00"
     },
     "TrackFBlue": {
-      "status": "waiting",
+      "status": "open",
       "start_date": "2024-03-22",
       "stop_date": null,
       "difficulty": "blue",
@@ -872,7 +872,7 @@
           "id": 33
         }
       },
-      "date_modified": "2024-03-20T11:43:06.315325+02:00"
+      "date_modified": "2024-03-22T08:46:50.806561+02:00"
     },
     "Track13EBlue": {
       "status": "open",
@@ -894,7 +894,7 @@
     },
     "TrackJBlue": {
       "status": "open",
-      "start_date": "2023-12-09",
+      "start_date": "2024-03-22",
       "stop_date": null,
       "difficulty": "blue",
       "info": {
@@ -908,7 +908,7 @@
           "id": 45
         }
       },
-      "date_modified": "2023-12-10T00:12:37.917438+02:00"
+      "date_modified": "2024-03-22T08:47:10.233242+02:00"
     },
     "Track2BRed": {
       "status": "close",
@@ -1132,8 +1132,8 @@
       "date_modified": "2024-03-11T18:43:17.567896+02:00"
     },
     "TrackGBlue": {
-      "status": "close",
-      "start_date": null,
+      "status": "open",
+      "start_date": "2024-03-21",
       "stop_date": null,
       "difficulty": "blue",
       "info": {
@@ -1147,7 +1147,7 @@
           "id": 33
         }
       },
-      "date_modified": "2024-03-17T19:33:44.594795+02:00"
+      "date_modified": "2024-03-22T08:43:48.517868+02:00"
     },
     "Track5HBlack": {
       "status": "open",
@@ -1368,8 +1368,8 @@
       "date_modified": "2023-03-27T12:32:38.598167+03:00"
     },
     "Lift8": {
-      "isOpen": false,
-      "start_date": "2024-03-22",
+      "isOpen": true,
+      "start_date": "2024-03-21",
       "stop_date": null,
       "info": {
         "bottom_height": "925",
@@ -1379,11 +1379,11 @@
         "top_height": "1100",
         "type": "4SEAT"
       },
-      "date_modified": "2024-03-20T11:41:07.096557+02:00"
+      "date_modified": "2024-03-22T08:46:34.142070+02:00"
     },
     "Lift11": {
-      "isOpen": false,
-      "start_date": "2024-03-22",
+      "isOpen": true,
+      "start_date": "2024-03-21",
       "stop_date": null,
       "info": {
         "bottom_height": "925",
@@ -1393,7 +1393,7 @@
         "top_height": "1210",
         "type": "4SEAT"
       },
-      "date_modified": "2024-03-20T11:41:10.511230+02:00"
+      "date_modified": "2024-03-22T08:47:13.647750+02:00"
     },
     "Lift2R": {
       "isOpen": true,
@@ -1480,8 +1480,8 @@
       "date_modified": "2023-12-02T00:01:33.874439+02:00"
     },
     "Lift16": {
-      "isOpen": false,
-      "start_date": "2024-03-22",
+      "isOpen": true,
+      "start_date": "2024-03-21",
       "stop_date": null,
       "info": {
         "bottom_height": "950",
@@ -1491,7 +1491,7 @@
         "top_height": "1210",
         "type": "4SEAT"
       },
-      "date_modified": "2024-03-20T11:41:13.514054+02:00"
+      "date_modified": "2024-03-22T08:47:22.961888+02:00"
     },
     "Lift12": {
       "isOpen": true,
@@ -1508,132 +1508,5 @@
       "date_modified": "2023-12-02T00:01:43.916379+02:00"
     }
   },
-  "waitingTracksData": [
-    {
-      "tracks": [
-        {
-          "Track16CBlack": {
-            "status": "waiting",
-            "start_date": "2024-03-22",
-            "stop_date": null,
-            "difficulty": "black",
-            "info": {
-              "notes": [],
-              "bottom_height": "957",
-              "distance": "964",
-              "name": "16C",
-              "top_height": "1195",
-              "lift": {
-                "name": "16",
-                "id": 42
-              }
-            },
-            "date_modified": "2024-03-20T11:42:54.785159+02:00"
-          }
-        },
-        {
-          "Track16ARed": {
-            "status": "waiting",
-            "start_date": "2024-03-22",
-            "stop_date": null,
-            "difficulty": "red",
-            "info": {
-              "notes": [],
-              "bottom_height": "961",
-              "distance": "1741",
-              "name": "16A",
-              "top_height": "1205",
-              "lift": {
-                "name": "16",
-                "id": 42
-              }
-            },
-            "date_modified": "2024-03-20T11:56:00.659702+02:00"
-          }
-        },
-        {
-          "Track8CRed": {
-            "status": "waiting",
-            "start_date": "2024-03-22",
-            "stop_date": null,
-            "difficulty": "red",
-            "info": {
-              "notes": [],
-              "bottom_height": "955",
-              "distance": "750",
-              "name": "8C",
-              "top_height": "1105",
-              "lift": {
-                "name": "8",
-                "id": 33
-              }
-            },
-            "date_modified": "2024-03-20T11:42:16.185822+02:00"
-          }
-        },
-        {
-          "Track11FBlue": {
-            "status": "waiting",
-            "start_date": "2024-03-22",
-            "stop_date": null,
-            "difficulty": "blue",
-            "info": {
-              "notes": [],
-              "bottom_height": "931",
-              "distance": "2065",
-              "name": "11F",
-              "top_height": "1202",
-              "lift": {
-                "name": "11",
-                "id": 47
-              }
-            },
-            "date_modified": "2024-03-20T11:42:31.917069+02:00"
-          }
-        },
-        {
-          "TrackFBlue": {
-            "status": "waiting",
-            "start_date": "2024-03-22",
-            "stop_date": null,
-            "difficulty": "blue",
-            "info": {
-              "notes": [],
-              "bottom_height": "1075",
-              "distance": "294",
-              "name": "F",
-              "top_height": "1112",
-              "lift": {
-                "name": "8",
-                "id": 33
-              }
-            },
-            "date_modified": "2024-03-20T11:43:06.315325+02:00"
-          }
-        },
-        {
-          "Track8DBlue": {
-            "status": "waiting",
-            "start_date": "2024-03-22",
-            "stop_date": null,
-            "difficulty": "blue",
-            "info": {
-              "notes": [],
-              "bottom_height": "931",
-              "distance": "1420",
-              "name": "8D",
-              "top_height": "1117",
-              "lift": {
-                "name": "8",
-                "id": 33
-              }
-            },
-            "date_modified": "2024-03-20T11:42:19.827897+02:00"
-          }
-        }
-      ],
-      "title": "Estimated opening",
-      "date": "2024-03-22"
-    }
-  ]
+  "waitingTracksData": []
 }

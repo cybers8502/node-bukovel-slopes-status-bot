@@ -13,6 +13,7 @@ const customCSSForMapPage = `
   .legend, .map-controls {
     display: none!important;
   }`;
+
 const compareAndSendMessage = async () => {
   try {
     const externalData = await getExternalData();
@@ -40,7 +41,7 @@ const compareAndSendMessage = async () => {
         url: MAP_URL,
         selector: '#mapObject',
         customCSS: customCSSForMapPage,
-        customViewport: {width: 2865, height: 1648},
+        customViewport: {width: 1200, height: 689},
       });
       const sendMessages = async (chatID) => {
         try {
