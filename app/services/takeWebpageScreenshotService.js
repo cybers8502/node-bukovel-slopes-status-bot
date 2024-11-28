@@ -1,4 +1,5 @@
 const puppeteer = require('puppeteer');
+
 async function takeWebpageScreenshotService({url, selector, customCSS, customViewport}) {
   const browser = await puppeteer.launch({
     headless: true,

@@ -1,4 +1,5 @@
 const {dateFormat} = require('../services/formatDateService');
+
 const compareWaitingTracksData = (externalData, firebaseData) => {
   if (externalData.length === 0 && firebaseData) {
     return 'Лист очікування очищено';

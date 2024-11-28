@@ -6,6 +6,7 @@ const {
 } = require('../services/botSubscribeService');
 const {updateFirebaseRecord, removeFirebaseRecord} = require('../services/firebaseService');
 const {DB_ROOT} = require('../common-consts');
+
 function setupBotCommandsService() {
   bot.onText(/\/start/, async (msg) => {
     if (handlePrivateChatSubscription(msg)) {
