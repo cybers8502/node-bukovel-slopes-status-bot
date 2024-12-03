@@ -3,9 +3,10 @@ const {
   handlePrivateChatSubscription,
   handlePublicChatSubscription,
   handlePublicChatUnsubscription,
-} = require('../services/botSubscribeService');
-const {updateFirebaseRecord, removeFirebaseRecord} = require('../services/firebaseService');
-const {DB_ROOT} = require('../common-consts');
+} = require('../utils/telegramBotSubscriptionHandler');
+const {updateFirebaseRecord, removeFirebaseRecord} = require('../utils/firebaseUtilities');
+const {DB_ROOT} = require('../configs/consts');
+const {BOT_PRIVATE_SUBSCRIPTION, BOT_CHANNEL_SUBSCRIPTION} = require('../configs/messanges');
 
 function setupBotCommandsService() {
   bot.onText(/\/start/, async (msg) => {
@@ -14,14 +15,14 @@ function setupBotCommandsService() {
 
       const subscribedChanelInfo = {
         id: chatId,
-        name: msg.chat.username,
+        name: msg.chat.username || '',
         type: 'private',
         subscribed: new Date(),
       };
 
       await updateFirebaseRecord(`${DB_ROOT}subscribedChanel/${chatId}`, subscribedChanelInfo);
 
-      bot.sendMessage(chatId, `Підписано`);
+      bot.sendMessage(chatId, BOT_PRIVATE_SUBSCRIPTION);
     }
   });
 
@@ -31,15 +32,16 @@ function setupBotCommandsService() {
     if (handlePublicChatSubscription(msg)) {
       const subscribedChanelInfo = {
         id: chatId,
-        name: msg.chat.title,
+        name: msg.chat.title || '',
         type: 'group',
         subscribed: new Date(),
       };
 
       await updateFirebaseRecord(`${DB_ROOT}subscribedChanel/${chatId}`, subscribedChanelInfo);
 
-      bot.sendMessage(chatId, `Підписано`);
+      bot.sendMessage(chatId, BOT_CHANNEL_SUBSCRIPTION);
     }
+
     if (handlePublicChatUnsubscription(msg)) {
       await removeFirebaseRecord(`${DB_ROOT}subscribedChanel/${chatId}`);
     }

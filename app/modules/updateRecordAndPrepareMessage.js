@@ -1,6 +1,6 @@
-const {updateFirebaseRecord} = require('../services/firebaseService');
-const {DB_ROOT} = require('../common-consts');
-const {dateFormat} = require('../services/formatDateService');
+const {updateFirebaseRecord} = require('../utils/firebaseUtilities');
+const {DB_ROOT} = require('../configs/consts');
+const {dateFormat} = require('../utils/dateFormat');
 
 const updateRecordAndPrepareMessage = async (type, key, externalData, firebaseData) => {
   let userMessage = `Оновлено ${type === 'tracks' ? 'схил' : 'витяг'} ${externalData.info.name}.`;

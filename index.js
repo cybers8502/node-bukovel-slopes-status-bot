@@ -4,7 +4,7 @@ const {
   CRON_JOB_MORNING_SCHEDULE,
   CRON_JOB_MIDDAY_SCHEDULE,
   CRON_JOB_EVENING_SCHEDULE,
-} = require('./app/common-consts');
+} = require('./app/configs/consts');
 const {compareAndSendMessage} = require('./app/modules/compareAndSendMessage');
 const {setupBotCommandsService} = require('./app/modules/setupBotCommands');
 

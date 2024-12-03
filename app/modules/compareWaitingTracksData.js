@@ -1,4 +1,4 @@
-const {dateFormat} = require('../services/formatDateService');
+const {dateFormat} = require('../utils/dateFormat');
 
 const compareWaitingTracksData = (externalData, firebaseData) => {
   if (externalData.length === 0 && firebaseData) {
