@@ -1,4 +1,4 @@
-const {bot} = require('../configs/telegramConfig');
+const bot = require('../configs/telegramConfig');
 const {
   handlePrivateChatSubscription,
   handlePublicChatSubscription,
@@ -48,4 +48,4 @@ function setupBotCommandsService() {
   });
 }
 
-module.exports = {setupBotCommandsService};
+module.exports = setupBotCommandsService;

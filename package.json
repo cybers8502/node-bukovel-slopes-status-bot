@@ -19,6 +19,7 @@
   "author": "cybers8502",
   "license": "ISC",
   "dependencies": {
+    "@mtproto/core": "^6.3.0",
     "axios": "^1.7.7",
     "dotenv": "^16.3.1",
     "firebase-admin": "^11.11.0",
