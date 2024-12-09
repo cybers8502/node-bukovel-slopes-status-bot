@@ -43,7 +43,7 @@ const bukovelWebSiteNewsParser = async () => {
       await updateFirebaseRecord(`${DB_ROOT}news/newsSiteLastDate`, filteredNews[0].date);
 
       const htmlNews = filteredNews.map((item) => `<a href='${item.link}'>${item.title}</a>`);
-      await sendDigest(`Останні новини з вебсайту: \n\n ${htmlNews.join('\n\n')}`);
+      await sendDigest(`<b>Останні новини з вебсайту:</b> \n\n ${htmlNews.join('\n\n')}`);
     }
   } catch (error) {
     await errorInform({message: `Помилка при парсингу новин: ${error.message}`});

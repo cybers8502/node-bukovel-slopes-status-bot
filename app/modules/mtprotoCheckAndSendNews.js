@@ -28,7 +28,7 @@ const mtprotoCheckAndSendNews = async () => {
 
       messages = filteredUnreadMessages.map((message) => message.message);
 
-      await sendDigest(`Останні новини з телеграму: \n\n ${messages.join('\n\n')}`);
+      await sendDigest(`<b>Останні новини з телеграму:</b> \n\n ${messages.join('\n\n')}`);
     }
   } catch (error) {
     await errorInform({message: `Fetch Message Error: ${error.message || error}`});
