@@ -1,16 +1,22 @@
 require('dotenv').config();
 const cron = require('node-cron');
-const {
-  CRON_JOB_MORNING_SCHEDULE,
-  CRON_JOB_MIDDAY_SCHEDULE,
-  CRON_JOB_EVENING_SCHEDULE,
-} = require('./app/configs/consts');
-const {compareAndSendMessage} = require('./app/modules/compareAndSendMessage');
-const {setupBotCommandsService} = require('./app/modules/setupBotCommands');
+const compareAndSendMessage = require('./app/modules/compareAndSendMessage');
+const setupBotCommandsService = require('./app/modules/setupBotCommands');
+const mtprotoCheckAndSendNews = require('./app/modules/mtprotoCheckAndSendNews');
+const bukovelWebSiteNewsParser = require('./app/modules/bukovelWebSiteNewsParser');
 
-cron.schedule(CRON_JOB_MORNING_SCHEDULE, compareAndSendMessage);
-cron.schedule(CRON_JOB_MIDDAY_SCHEDULE, compareAndSendMessage);
-cron.schedule(CRON_JOB_EVENING_SCHEDULE, compareAndSendMessage);
+const digest = async () => {
+  await compareAndSendMessage();
+  await mtprotoCheckAndSendNews();
+  await bukovelWebSiteNewsParser();
+};
 
-compareAndSendMessage();
+cron.schedule('0 6 * * *', digest);
+cron.schedule('0 8 * * *', compareAndSendMessage);
+cron.schedule('0 10 * * *', digest);
+cron.schedule('0 20 * * *', digest);
+cron.schedule('0 16 * * *', digest);
+cron.schedule('0 22 * * *', digest);
+
+digest();
 setupBotCommandsService();

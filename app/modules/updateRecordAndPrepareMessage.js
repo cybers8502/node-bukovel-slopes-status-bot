@@ -47,4 +47,4 @@ const getTrackStatus = (status) => {
   }
 };
 
-module.exports = {updateRecordAndPrepareMessage};
+module.exports = updateRecordAndPrepareMessage;

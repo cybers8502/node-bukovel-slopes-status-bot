@@ -11,6 +11,4 @@ const sendTelegramMessageOrUnsubscribe = async ({chatID, message, buffer}) => {
   }
 };
 
-module.exports = {
-  sendTelegramMessageOrUnsubscribe,
-};
+module.exports = sendTelegramMessageOrUnsubscribe;

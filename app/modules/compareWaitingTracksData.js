@@ -40,4 +40,4 @@ const compareWaitingTracksData = (externalData, firebaseData) => {
   return changes ? `Оновлено лист очікування схилів:\n\n${changes}` : '';
 };
 
-module.exports = {compareWaitingTracksData};
+module.exports = compareWaitingTracksData;
