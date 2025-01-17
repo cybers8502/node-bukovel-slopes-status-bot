@@ -1,4 +1,5 @@
 const {DB_ROOT, MAP_URL} = require('../configs/consts');
+const logger = require('../utils/logger');
 const {fetchSlopesDataService} = require('../utils/fetchSlopesExternalData');
 const {getFirebaseData} = require('../utils/firebaseUtilities');
 const {takeWebpageScreenshotService} = require('../utils/takeWebpageScreenshot');
@@ -15,7 +16,11 @@ const customCSSForMapPage = `
   }`;
 
 const compareAndSendMessage = async () => {
+  const startTime = Date.now();
+
   try {
+    logger.info('Starting compareAndSendMessage...');
+
     const externalData = await fetchSlopesDataService();
     const firebaseData = await getFirebaseData(DB_ROOT);
 
@@ -44,9 +49,14 @@ const compareAndSendMessage = async () => {
       });*/
 
       await sendDigest(collectMessages);
+      logger.info('compareAndSendMessage completed successfully.');
     }
   } catch (e) {
     await errorInform(`Error: ${e.message}`);
+  } finally {
+    const endTime = Date.now();
+    const duration = endTime - startTime;
+    logger.info(`compareAndSendMessage executed in ${duration}ms`);
   }
 };
 
