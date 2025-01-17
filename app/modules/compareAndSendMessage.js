@@ -36,14 +36,14 @@ const compareAndSendMessage = async () => {
     }
 
     if (collectMessages) {
-      const buffer = await takeWebpageScreenshotService({
+      /*const buffer = await takeWebpageScreenshotService({
         url: MAP_URL,
         selector: '#mapObject',
         customCSS: customCSSForMapPage,
         customViewport: {width: 2865, height: 1648},
-      });
+      });*/
 
-      await sendDigest(collectMessages, buffer);
+      await sendDigest(collectMessages);
     }
   } catch (e) {
     await errorInform(`Error: ${e.message}`);

@@ -34,5 +34,5 @@ const mtprotoCheckAndSendNews = async () => {
     await errorInform({message: `Fetch Message Error: ${error.message || error}`});
   }
 };
-mtprotoCheckAndSendNews();
+
 module.exports = mtprotoCheckAndSendNews;
