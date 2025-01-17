@@ -26,7 +26,8 @@
     "fs": "^0.0.1-security",
     "node-cron": "^3.0.3",
     "node-telegram-bot-api": "^0.63.0",
-    "puppeteer": "^22.5.0"
+    "puppeteer": "^22.5.0",
+    "winston": "^3.17.0"
   },
   "devDependencies": {
     "eslint": "^8.53.0",

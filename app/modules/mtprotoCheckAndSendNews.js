@@ -5,9 +5,12 @@ const errorInform = require('../services/errorInform');
 const {getFirebaseData, updateFirebaseRecord} = require('../utils/firebaseUtilities');
 const {DB_ROOT} = require('../configs/consts');
 const sendDigest = require('../services/sendDigest');
+const logger = require('../utils/logger');
 
 const mtprotoCheckAndSendNews = async () => {
   try {
+    logger.info('Starting mtprotoCheckAndSendNews...');
+
     await mtProtoAuthorize();
     const channelHistory = await mtProtoFetchChannelHistory({
       channelName: 'bukovel_resort',
@@ -30,6 +33,8 @@ const mtprotoCheckAndSendNews = async () => {
 
       await sendDigest(`<b>Останні новини з телеграму:</b> \n\n ${messages.join('\n\n')}`);
     }
+
+    logger.info('mtprotoCheckAndSendNews completed successfully.');
   } catch (error) {
     await errorInform({message: `Fetch Message Error: ${error.message || error}`});
   }
