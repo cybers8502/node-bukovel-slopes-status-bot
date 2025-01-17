@@ -2,8 +2,9 @@ const puppeteer = require('puppeteer');
 
 async function takeWebpageScreenshot({url, selector, customCSS, customViewport}) {
   const browser = await puppeteer.launch({
-    headless: true,
-    args: ['--no-sandbox', '--disable-setuid-sandbox'],
+    args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-extensions', '--enable-gpu'],
+    executablePath: '/usr/bin/chromium-browser',
+    userDataDir: '/tmp/puppeteer',
   });
   const page = await browser.newPage();
 
