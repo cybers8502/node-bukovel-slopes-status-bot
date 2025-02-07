@@ -3,7 +3,7 @@ const logger = require('../utils/logger');
 const {sendTelegramMessage} = require('../utils/telegramUtilities');
 
 const errorInform = async ({message}) => {
-  logger.error(`compareAndSendMessage failed: ${message}`);
+  logger.error(`Error Inform: ${message}`);
 
   if (process.env.NODE_ENV === 'production') {
     if (!message) {

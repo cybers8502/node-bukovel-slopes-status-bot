@@ -52,7 +52,7 @@ const compareAndSendMessage = async () => {
       logger.info('compareAndSendMessage completed successfully.');
     }
   } catch (e) {
-    await errorInform(`Error: ${e.message}`);
+    await errorInform(`Error: ${e}`);
   } finally {
     const endTime = Date.now();
     const duration = endTime - startTime;

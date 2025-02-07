@@ -18,14 +18,7 @@ const digest = async () => {
   }
 };
 
-cron.schedule('0 00 * * *', digest);
-cron.schedule('0 6 * * *', digest);
-cron.schedule('0 8 * * *', compareAndSendMessage);
-cron.schedule('0 10 * * *', digest);
-cron.schedule('0 15 * * *', digest);
-cron.schedule('0 17 * * *', digest);
-cron.schedule('0 20 * * *', digest);
-cron.schedule('0 22 * * *', digest);
+cron.schedule('0 * * * *', digest);
 
 digest();
 setupBotCommandsService();
