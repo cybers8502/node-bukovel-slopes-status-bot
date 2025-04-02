@@ -4,6 +4,8 @@
 #     https://www.atlassian.com/git/tutorials/saving-changes/gitignore
 
 .env
+.env.development
+.env.production
 mtprotoSession.json
 
 pugatory/
@@ -52,3 +54,5 @@ Thumbs.db
 *.flv
 *.mov
 *.wmv
+!/.env.production
+/.env.production

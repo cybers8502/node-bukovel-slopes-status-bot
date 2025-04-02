@@ -13,7 +13,7 @@ const errorInform = async ({message}) => {
 
     await sendTelegramMessage(process.env.TELEGRAM_CHAT_ID, message);
   } else {
-    console.log(message);
+    console.warn('Error Inform is in development mod. Error: ', message);
   }
 };
 

@@ -8,6 +8,7 @@ const updateRecordAndPrepareMessage = async (type, key, externalData, firebaseDa
   if (externalData?.status !== firebaseData?.status) {
     userMessage += `\nСтатус змінено на ${getTrackStatus(externalData.status)}`;
   }
+
   if (externalData?.isOpen !== firebaseData?.isOpen) {
     userMessage += `\nСтатус змінено на ${externalData.isOpen ? 'відкрито' : 'зачинено'}.`;
   }
@@ -17,7 +18,7 @@ const updateRecordAndPrepareMessage = async (type, key, externalData, firebaseDa
       ? `\nДата відкриття ${dateFormat(externalData.start_date)}`
       : '\nДату відкриття видалено';
 
-    externalData.history = firebaseData.history || [];
+    externalData.history = firebaseData.history ? [...firebaseData.history] : [];
     type === 'tracks'
       ? externalData.history.push({[externalData.status]: externalData.start_date || new Date().toString()})
       : externalData.history.push({
