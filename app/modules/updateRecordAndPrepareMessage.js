@@ -7,10 +7,15 @@ const updateRecordAndPrepareMessage = async (type, key, externalData, firebaseDa
 
   if (externalData?.status !== firebaseData?.status) {
     userMessage += `\nСтатус змінено на ${getTrackStatus(externalData.status)}`;
+  } else {
+    type === 'tracks' && (userMessage += `\nСтатус не змінювався (${getTrackStatus(externalData.status)})`);
   }
 
   if (externalData?.isOpen !== firebaseData?.isOpen) {
     userMessage += `\nСтатус змінено на ${externalData.isOpen ? 'відкрито' : 'зачинено'}.`;
+  } else {
+    type === 'lifts' &&
+      (userMessage += `\nСтатус не змінювався (${externalData.isOpen ? 'відкрито' : 'зачинено'})`);
   }
 
   if (externalData.start_date !== firebaseData.start_date) {
@@ -19,11 +24,14 @@ const updateRecordAndPrepareMessage = async (type, key, externalData, firebaseDa
       : '\nДату відкриття видалено';
 
     externalData.history = firebaseData.history ? [...firebaseData.history] : [];
+
     type === 'tracks'
       ? externalData.history.push({[externalData.status]: externalData.start_date || new Date().toString()})
       : externalData.history.push({
           [externalData.isOpen ? 'open' : 'close']: externalData.start_date || new Date().toString(),
         });
+  } else {
+    userMessage += `\nДата відкриття не змінювалася (${externalData?.start_date || 'відсутня'})`;
   }
 
   if (externalData.stop_date && externalData.stop_date !== firebaseData.stop_date) {

@@ -27,14 +27,30 @@ const compareAndSendMessage = async () => {
     let collectMessages = '';
 
     for (const [key, track] of Object.entries(externalData.tracksData)) {
-      if (track.date_modified !== firebaseData.tracksData[key]?.date_modified) {
+      if (!firebaseData?.tracksData?.[key]) {
+        firebaseData.tracksData ??= {};
+        firebaseData.tracksData[key] = {
+          ...track,
+          date_modified: Date.now(),
+        };
+      }
+
+      if (track.date_modified !== firebaseData.tracksData?.[key]?.date_modified) {
         collectMessages +=
           (await updateRecordAndPrepareMessage('tracks', key, track, firebaseData.tracksData[key])) + '\n\n';
       }
     }
 
     for (const [key, lift] of Object.entries(externalData.liftsData)) {
-      if (lift.date_modified !== firebaseData.liftsData[key]?.date_modified) {
+      if (!firebaseData?.liftsData?.[key]) {
+        firebaseData.liftsData ??= {};
+        firebaseData.liftsData[key] = {
+          ...lift,
+          date_modified: Date.now(),
+        };
+      }
+
+      if (lift.date_modified !== firebaseData.liftsData?.[key]?.date_modified) {
         collectMessages +=
           (await updateRecordAndPrepareMessage('lifts', key, lift, firebaseData.liftsData[key])) + '\n\n';
       }
