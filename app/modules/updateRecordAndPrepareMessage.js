@@ -3,7 +3,7 @@ const {DB_ROOT} = require('../configs/consts');
 const {dateFormat} = require('../utils/dateFormat');
 
 const updateRecordAndPrepareMessage = async (type, key, externalData, firebaseData) => {
-  let userMessage = `Оновлено ${type === 'tracks' ? 'схил' : 'витяг'} ${externalData.info.name}.`;
+  let userMessage = `Оновлено ${type === 'tracks' ? 'схил' : 'витяг'} ${externalData.info.name}${getTrackDifficultyLevel(externalData.difficulty)}`;
 
   if (externalData?.status !== firebaseData?.status) {
     userMessage += `\nСтатус змінено на ${getTrackStatus(externalData.status)}`;
@@ -12,7 +12,7 @@ const updateRecordAndPrepareMessage = async (type, key, externalData, firebaseDa
   }
 
   if (externalData?.isOpen !== firebaseData?.isOpen) {
-    userMessage += `\nСтатус змінено на ${externalData.isOpen ? 'відкрито' : 'зачинено'}.`;
+    userMessage += `\nСтатус змінено на ${externalData.isOpen ? 'відкрито 🚠️' : 'зачинено'}.`;
   } else {
     type === 'lifts' &&
       (userMessage += `\nСтатус не змінювався (${externalData.isOpen ? 'відкрито' : 'зачинено'})`);
@@ -48,11 +48,24 @@ const updateRecordAndPrepareMessage = async (type, key, externalData, firebaseDa
 const getTrackStatus = (status) => {
   switch (status) {
     case 'open':
-      return 'відкрито';
+      return 'відкрито ⛷️';
     case 'close':
       return 'зачинено';
     case 'waiting':
-      return 'очікується відкриття';
+      return 'очікується відкриття 🎿';
+  }
+};
+
+const getTrackDifficultyLevel = (difficulty) => {
+  switch (difficulty) {
+    case 'red':
+      return ' 🔴';
+    case 'blue':
+      return ' 🔵';
+    case 'black':
+      return ' ⚫';
+    default:
+      return '.';
   }
 };
 
