@@ -32,7 +32,28 @@ app.use(
   `/telegram/${process.env.TELEGRAM_TOKEN}`,
   webhookCallback(bot, 'express', {secretToken: process.env.SECRET}),
 );
-logger.info(`Telegram webhook set up ${process.env.SECRET}`);
+
+app.use((req, _res, next) => {
+  if (req.path.startsWith('/telegram')) {
+    logger.info(`Incoming ${req.method} ${req.path}`, {
+      headers: {
+        secret: req.header('x-telegram-bot-api-secret-token') ? 'present' : 'absent',
+      },
+    });
+  }
+  next();
+});
+
+app.use((err, _req, res, _next) => {
+  logger.error('Express error:', err);
+  res.status(500).send('Internal error');
+});
+
+// ловимо помилки бота
+bot.catch((err) => {
+  logger.error('Grammy error:', err);
+});
+
 app.get('/cron', async (req, res) => {
   const token = req.query.secret || req.headers['x-cron-secret'];
   if (token !== process.env.SECRET) return res.status(401).send('Unauthorized');
