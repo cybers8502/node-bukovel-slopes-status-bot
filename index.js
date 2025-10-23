@@ -7,12 +7,10 @@ const {bot} = require('./app/configs/telegramConfig');
 const compareAndSendMessage = require('./app/modules/compareAndSendMessage');
 const setupBotCommandsService = require('./app/modules/setupBotCommands');
 const mtprotoCheckAndSendNews = require('./app/modules/mtprotoCheckAndSendNews');
-const bukovelWebSiteNewsParser = require('./app/modules/bukovelWebSiteNewsParser');
+// const bukovelWebSiteNewsParser = require('./app/modules/bukovelWebSiteNewsParser');
 
 const app = express();
 app.use(express.json());
-
-const SECRET = process.env.SECRET || 'your own secret key';
 
 const digest = async () => {
   try {
@@ -30,7 +28,10 @@ app.get('/', (_req, res) => res.status(200).send('Service is up'));
 
 app.get('/_health', (_req, res) => res.status(200).send('OK'));
 
-app.use(`/telegram/${process.env.TELEGRAM_TOKEN}`, webhookCallback(bot, 'express', {secretToken: SECRET}));
+app.use(
+  `/telegram/${process.env.TELEGRAM_TOKEN}`,
+  webhookCallback(bot, 'express', {secretToken: process.env.SECRET}),
+);
 
 app.get('/cron', async (req, res) => {
   const token = req.query.secret || req.headers['x-cron-secret'];
