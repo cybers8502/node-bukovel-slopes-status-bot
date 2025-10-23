@@ -32,10 +32,10 @@ app.use(
   `/telegram/${process.env.TELEGRAM_TOKEN}`,
   webhookCallback(bot, 'express', {secretToken: process.env.SECRET}),
 );
-
+logger.info(`Telegram webhook set up ${process.env.SECRET}`);
 app.get('/cron', async (req, res) => {
   const token = req.query.secret || req.headers['x-cron-secret'];
-  if (token !== SECRET) return res.status(401).send('Unauthorized');
+  if (token !== process.env.SECRET) return res.status(401).send('Unauthorized');
 
   try {
     await digest();
