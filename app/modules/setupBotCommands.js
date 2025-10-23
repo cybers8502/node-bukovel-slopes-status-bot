@@ -1,15 +1,15 @@
-const bot = require('../configs/telegramConfig');
 const {
   handlePrivateChatSubscription,
   handlePublicChatSubscription,
   handlePublicChatUnsubscription,
 } = require('../utils/telegramBotSubscriptionHandler');
 const {updateFirebaseRecord, removeFirebaseRecord} = require('../utils/firebaseUtilities');
+const {bot} = require('../configs/telegramConfig');
 const {DB_ROOT} = require('../configs/consts');
 const {BOT_PRIVATE_SUBSCRIPTION, BOT_CHANNEL_SUBSCRIPTION} = require('../configs/messanges');
 
 function setupBotCommandsService() {
-  bot.onText(/\/start/, async (msg) => {
+  bot.command('start', async (msg) => {
     if (handlePrivateChatSubscription(msg)) {
       const chatId = msg.chat.id;
 
@@ -22,11 +22,11 @@ function setupBotCommandsService() {
 
       await updateFirebaseRecord(`${DB_ROOT}subscribedChanel/${chatId}`, subscribedChanelInfo);
 
-      bot.sendMessage(chatId, BOT_PRIVATE_SUBSCRIPTION);
+      bot.api.sendMessage(chatId, BOT_PRIVATE_SUBSCRIPTION);
     }
   });
 
-  bot.on('message', async (msg) => {
+  bot.on('message:text', async (msg) => {
     const chatId = msg.chat.id;
 
     if (handlePublicChatSubscription(msg)) {
@@ -39,7 +39,7 @@ function setupBotCommandsService() {
 
       await updateFirebaseRecord(`${DB_ROOT}subscribedChanel/${chatId}`, subscribedChanelInfo);
 
-      bot.sendMessage(chatId, BOT_CHANNEL_SUBSCRIPTION);
+      bot.api.sendMessage(chatId, BOT_CHANNEL_SUBSCRIPTION);
     }
 
     if (handlePublicChatUnsubscription(msg)) {

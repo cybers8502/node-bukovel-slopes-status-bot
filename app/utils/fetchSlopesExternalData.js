@@ -1,5 +1,4 @@
 const axios = require('axios');
-const fs = require('fs').promises;
 const {SLOPES_STATUS_URL} = require('../configs/consts');
 const logger = require('./logger');
 
