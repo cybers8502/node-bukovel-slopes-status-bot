@@ -16,7 +16,7 @@ async function getUser() {
 
 async function signIn({code, phone, phone_code_hash}) {
   return mtproto.call('auth.signIn', {
-    phone_code: code,
+    phone_code: '63914',
     phone_number: phone,
     phone_code_hash: phone_code_hash,
   });
@@ -25,7 +25,7 @@ async function signIn({code, phone, phone_code_hash}) {
 async function signUp({phone, phone_code_hash}) {
   return mtproto.call('auth.signUp', {
     phone_number: phone,
-    phone_code_hash: '20363',
+    phone_code_hash: phone_code_hash,
     first_name: 'MTProto',
     last_name: 'Core',
   });
