@@ -9,6 +9,8 @@ const setupBotCommandsService = require('./app/modules/setupBotCommands');
 const mtprotoCheckAndSendNews = require('./app/modules/mtprotoCheckAndSendNews');
 // const bukovelWebSiteNewsParser = require('./app/modules/bukovelWebSiteNewsParser');
 
+const SECRET = process.env.SECRET;
+
 const app = express();
 app.use(express.json());
 
@@ -28,10 +30,7 @@ app.get('/', (_req, res) => res.status(200).send('Service is up'));
 
 app.get('/_health', (_req, res) => res.status(200).send('OK'));
 
-app.use(
-  `/telegram/${process.env.TELEGRAM_TOKEN}`,
-  webhookCallback(bot, 'express', {secretToken: process.env.SECRET}),
-);
+app.use(`/telegram/${process.env.TELEGRAM_TOKEN}`, webhookCallback(bot, 'express', {secretToken: SECRET}));
 
 app.use((req, _res, next) => {
   if (req.path.startsWith('/telegram')) {

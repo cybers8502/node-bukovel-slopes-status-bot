@@ -8,13 +8,3 @@ services:
       - .:/usr/src/app
       - ./sessions:/usr/src/app/sessions
     command: npm run dev
-
-  auth:                    # одноразова інтерактивна авторизація
-    image: node:20
-    working_dir: /usr/src/app
-    volumes:
-      - .:/usr/src/app
-      - ./sessions:/usr/src/app/sessions
-    stdin_open: true
-    tty: true
-    command: npm run tgAuth

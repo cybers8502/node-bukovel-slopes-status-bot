@@ -8,8 +8,7 @@
     "start": "NODE_ENV=production node index.js",
     "dev": "NODE_ENV=development node index.js",
     "test": "test",
-    "lint": "eslint .",
-    "tgAuth": "NODE_ENV=development node scripts/run-mtproto-auth.js"
+    "lint": "eslint ."
   },
   "keywords": [
     "bukovel",
