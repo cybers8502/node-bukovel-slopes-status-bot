@@ -1,4 +1,4 @@
-const bot = require('../configs/telegramConfig');
+const {bot} = require('../configs/telegramConfig');
 
 async function sendTelegramMessage(chatID, message) {
   await bot.api.sendMessage(chatID, message, {parse_mode: 'HTML'});
