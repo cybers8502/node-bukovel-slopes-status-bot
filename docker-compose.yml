@@ -1,9 +1,20 @@
-version: '1'
+version: '3.9'
 services:
   app:
     build: .
     ports:
-      - "8080:8080"
+      - '8080:8080'
     volumes:
       - .:/usr/src/app
-    command: npm dev
+      - ./sessions:/usr/src/app/sessions
+    command: npm run dev
+
+  auth:                    # одноразова інтерактивна авторизація
+    image: node:20
+    working_dir: /usr/src/app
+    volumes:
+      - .:/usr/src/app
+      - ./sessions:/usr/src/app/sessions
+    stdin_open: true
+    tty: true
+    command: npm run tgAuth
