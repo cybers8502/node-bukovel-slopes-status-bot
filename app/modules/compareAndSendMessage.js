@@ -19,8 +19,6 @@ const compareAndSendMessage = async () => {
   const startTime = Date.now();
 
   try {
-    logger.info('Starting compareAndSendMessage...');
-
     const externalData = await fetchSlopesDataService();
     const firebaseData = await getFirebaseData(DB_ROOT);
 
@@ -63,9 +61,8 @@ const compareAndSendMessage = async () => {
         customCSS: customCSSForMapPage,
         customViewport: {width: 2865, height: 1648},
       });
-
+      console.log('compareAndSendMessage buffer ', buffer);
       await sendDigest(collectMessages, buffer);
-      logger.info('compareAndSendMessage completed successfully.');
     }
   } catch (e) {
     await errorInform(`Error: ${e}`);

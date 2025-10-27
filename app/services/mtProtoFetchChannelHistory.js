@@ -4,7 +4,6 @@ const logger = require('../utils/logger');
 
 async function mtProtoFetchChannelHistory({channelName, messagesLimit = 1}) {
   try {
-    logger.info('Starting mtProtoFetchChannelHistory...');
     const channel = await mtproto.call('contacts.resolveUsername', {
       username: channelName,
     });

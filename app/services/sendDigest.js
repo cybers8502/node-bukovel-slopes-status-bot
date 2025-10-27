@@ -4,15 +4,21 @@ const sendTelegramMessageOrUnsubscribe = require('./sendTelegramMessageOrUnsubsc
 const logger = require('../utils/logger');
 
 const sendDigest = async (collectMessages, buffer) => {
-  logger.info('sendDigest is starting...');
   const chatsID = await getFirebaseData(`${DB_ROOT}subscribedChanel`);
 
+  console.log('sendDigest buffer ', buffer);
+  console.log('sendDigest chatsID ', chatsID);
+
+  if (!chatsID || Object.keys(chatsID).length === 0) {
+    throw new Error('No any chats ID found');
+  }
+
   await Promise.all(
-    Object.keys(chatsID).map((chatID) =>
-      sendTelegramMessageOrUnsubscribe({chatID, message: collectMessages, buffer}),
-    ),
+    Object.keys(chatsID).map((chatID) => {
+      console.log('sendDigest chatID ', chatID);
+      sendTelegramMessageOrUnsubscribe({chatID, message: collectMessages, buffer});
+    }),
   );
-  logger.info('sendDigest is finished!');
 };
 
 module.exports = sendDigest;

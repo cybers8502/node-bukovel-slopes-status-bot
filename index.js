@@ -16,9 +16,8 @@ app.use(express.json());
 
 const digest = async () => {
   try {
-    logger.info('Running digest...');
     await compareAndSendMessage();
-    await mtprotoCheckAndSendNews();
+    // await mtprotoCheckAndSendNews();
     // await bukovelWebSiteNewsParser();
     logger.info('Digest completed successfully.');
   } catch (error) {
@@ -72,6 +71,4 @@ setupBotCommandsService();
 const PORT = process.env.PORT || 8080;
 const HOST = '0.0.0.0';
 
-app.listen(PORT, HOST, () => {
-  logger.info(`HTTP server listening on http://${HOST}:${PORT}`);
-});
+app.listen(PORT, HOST);
