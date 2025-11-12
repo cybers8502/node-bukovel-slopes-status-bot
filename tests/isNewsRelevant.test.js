@@ -33,7 +33,7 @@ Bukovel запрошує...
 
 describe('isNewsRelevant (сезон/схили/траси/анонси/продовження/закриття)', () => {
   const shouldPass = [1, 2, 3, 4, 5, 6, 7, 8, 11, 12, 13];
-  const shouldFail = [10];
+  const shouldFail = [9, 10];
 
   test.each(shouldPass.map((i) => [i, samples[i]]))('повинно ПРОЙТИ: #%s', (_i, text) => {
     expect(isNewsRelevant(text)).toBe(true);
