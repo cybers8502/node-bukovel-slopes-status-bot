@@ -1,18 +1,27 @@
 const {sendTelegramMessage, sendTelegramPhoto} = require('../utils/telegramUtilities');
-const {removeFirebaseRecord} = require('../utils/firebaseUtilities');
+const {removeFirebaseRecord, updateFirebaseRecord} = require('../utils/firebaseUtilities');
 const {DB_ROOT} = require('../configs/consts');
-const logger = require('../utils/logger');
-const {bot} = require('../configs/telegramConfig');
 
 const sendTelegramMessageOrUnsubscribe = async ({chatID, message, buffer}) => {
-  console.log('sendTelegramMessageOrUnsubscribe message: ', message);
-  console.log('sendTelegramMessageOrUnsubscribe buffer: ', buffer);
-
   try {
     await sendTelegramMessage(chatID, message);
     buffer && (await sendTelegramPhoto(chatID, buffer));
   } catch (error) {
-    logger.error(`Error sendTelegramMessageOrUnsubscribe: ${error}`);
+    if (err instanceof GrammyError && err.parameters?.migrate_to_chat_id) {
+      const newId = err.parameters.migrate_to_chat_id;
+
+      const subscribedChanelInfo = {
+        id: chatId,
+        name: msg.chat.username || '',
+        type: 'private',
+        subscribed: new Date(),
+      };
+
+      await updateFirebaseRecord(`${DB_ROOT}subscribedChanel/${newId}`, {id: newId});
+      await removeFirebaseRecord(`${DB_ROOT}subscribedChanel/${chatID}`);
+      return;
+    }
+
     await removeFirebaseRecord(`${DB_ROOT}subscribedChanel/${chatID}`);
   }
 };

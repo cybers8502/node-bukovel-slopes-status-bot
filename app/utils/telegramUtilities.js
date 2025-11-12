@@ -6,7 +6,6 @@ async function sendTelegramMessage(chatID, message) {
 }
 
 async function sendTelegramPhoto(chatID, buffer) {
-  console.log('sendTelegramPhoto: ', buffer);
   await bot.api.sendPhoto(chatID, new InputFile(buffer));
 }
 

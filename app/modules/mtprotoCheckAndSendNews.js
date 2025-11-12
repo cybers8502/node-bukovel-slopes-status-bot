@@ -6,30 +6,36 @@ const {getFirebaseData, updateFirebaseRecord} = require('../utils/firebaseUtilit
 const {DB_ROOT} = require('../configs/consts');
 const sendDigest = require('../services/sendDigest');
 const logger = require('../utils/logger');
+const {hasText, isNewsRelevant} = require('../telegramNews/isNewsRelevant');
+
+const CHANNEL = 'bukovel_resort';
+const MESSAGES_LIMIT = 5;
 
 const mtprotoCheckAndSendNews = async () => {
   try {
     await mtProtoAuthorize();
-    const channelHistory = await mtProtoFetchChannelHistory({
-      channelName: 'bukovel_resort',
-      messagesLimit: 1,
-    });
 
-    let messages = [];
+    const channelHistory = await mtProtoFetchChannelHistory({
+      channelName: CHANNEL,
+      messagesLimit: MESSAGES_LIMIT,
+    });
 
     const newsLastDate = (await getFirebaseData(`${DB_ROOT}news/newsTelegramLastDate`)) || 0;
 
-    const newMessages = channelHistory.messages;
-    const filteredUnreadMessages = newMessages.filter((message) => {
-      return message.date > newsLastDate;
-    });
+    const fresh = (channelHistory?.messages || []).filter((m) => Number(m?.date) > Number(newsLastDate));
 
-    if (filteredUnreadMessages.length > 0) {
-      await updateFirebaseRecord(`${DB_ROOT}news/newsTelegramLastDate`, filteredUnreadMessages[0].date);
+    if (fresh.length === 0) return;
 
-      messages = filteredUnreadMessages.map((message) => message.message);
+    const latestDate = Math.max(...fresh.map((m) => Number(m.date)));
 
-      await sendDigest(`<b>Останні новини з телеграму:</b> \n\n ${messages.join('\n\n')}`);
+    await updateFirebaseRecord(`${DB_ROOT}news/newsTelegramLastDate`, latestDate);
+
+    const withText = fresh.filter(hasText);
+
+    const passed = withText.map((m) => m.message.trim()).filter(isNewsRelevant);
+
+    if (passed.length > 0) {
+      await sendDigest(`<b>Останні новини з телеграму:</b>\n\n${passed.join('\n\n')}`);
     }
   } catch (error) {
     await errorInform({message: `Fetch Message Error: ${error.message || error}`});

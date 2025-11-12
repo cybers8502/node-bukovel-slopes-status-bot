@@ -61,7 +61,6 @@ const compareAndSendMessage = async () => {
         customCSS: customCSSForMapPage,
         customViewport: {width: 2865, height: 1648},
       });
-      console.log('compareAndSendMessage buffer ', buffer);
       await sendDigest(collectMessages, buffer);
     }
   } catch (e) {

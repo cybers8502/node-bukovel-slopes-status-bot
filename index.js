@@ -17,7 +17,7 @@ app.use(express.json());
 const digest = async () => {
   try {
     await compareAndSendMessage();
-    // await mtprotoCheckAndSendNews();
+    await mtprotoCheckAndSendNews();
     // await bukovelWebSiteNewsParser();
     logger.info('Digest completed successfully.');
   } catch (error) {
@@ -26,8 +26,6 @@ const digest = async () => {
 };
 
 app.get('/', (_req, res) => res.status(200).send('Service is up'));
-
-app.get('/_health', (_req, res) => res.status(200).send('OK'));
 
 app.use(`/telegram/${process.env.TELEGRAM_TOKEN}`, webhookCallback(bot, 'express', {secretToken: SECRET}));
 
@@ -47,11 +45,6 @@ app.use((err, _req, res, _next) => {
   res.status(500).send('Internal error');
 });
 
-// ловимо помилки бота
-bot.catch((err) => {
-  logger.error('Grammy error:', err);
-});
-
 app.get('/cron', async (req, res) => {
   const token = req.query.secret || req.headers['x-cron-secret'];
   if (token !== process.env.SECRET) return res.status(401).send('Unauthorized');
@@ -64,7 +57,10 @@ app.get('/cron', async (req, res) => {
   }
 });
 
-// cron.schedule('0 * * * *', digest);
+// ловимо помилки бота
+bot.catch((err) => {
+  logger.error('Grammy error:', err);
+});
 
 setupBotCommandsService();
 
