@@ -17,7 +17,7 @@ app.use(express.json());
 const digest = async () => {
   try {
     await compareAndSendMessage();
-    await mtprotoCheckAndSendNews();
+    // await mtprotoCheckAndSendNews();
     // await bukovelWebSiteNewsParser();
     logger.info('Digest completed successfully.');
   } catch (error) {

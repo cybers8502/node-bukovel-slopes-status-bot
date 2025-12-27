@@ -33,10 +33,10 @@ const compareAndSendMessage = async () => {
         };
       }
 
-      /*if (track.date_modified !== firebaseData.tracksData?.[key]?.date_modified) {
+      if (track.date_modified !== firebaseData.tracksData?.[key]?.date_modified) {
         collectMessages +=
           (await updateRecordAndPrepareMessage('tracks', key, track, firebaseData.tracksData[key])) + '\n\n';
-      }*/
+      }
     }
 
     for (const [key, lift] of Object.entries(externalData.liftsData)) {
