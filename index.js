@@ -62,12 +62,19 @@ app.get('/cron', async (req, res) => {
   }
 });
 
-// ловимо помилки бота
 bot.catch((err) => {
   logger.error('Grammy error:', err);
 });
 
 setupBotCommandsService();
+
+process.on('unhandledRejection', (err) => {
+  console.error('Unhandled rejection:', err);
+});
+
+process.on('uncaughtException', (err) => {
+  console.error('Uncaught exception:', err);
+});
 
 const PORT = process.env.PORT || 8080;
 const HOST = '0.0.0.0';
