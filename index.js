@@ -1,12 +1,12 @@
-require('dotenv').config({path: `.env.${process.env.NODE_ENV}`});
+require('dotenv').config({ path: `.env.${process.env.NODE_ENV}` });
 // const cron = require('node-cron');
 const express = require('express');
-const {webhookCallback} = require('grammy');
+const { webhookCallback } = require('grammy');
 const logger = require('./app/utils/logger');
-const {bot} = require('./app/configs/telegramConfig');
+const { bot } = require('./app/configs/telegramConfig');
 const compareAndSendMessage = require('./app/modules/compareAndSendMessage');
 const setupBotCommandsService = require('./app/modules/setupBotCommands');
-const mtprotoCheckAndSendNews = require('./app/modules/mtprotoCheckAndSendNews');
+// const mtprotoCheckAndSendNews = require('./app/modules/mtprotoCheckAndSendNews');
 // const bukovelWebSiteNewsParser = require('./app/modules/bukovelWebSiteNewsParser');
 
 const SECRET = process.env.SECRET;
@@ -27,13 +27,18 @@ const digest = async () => {
 
 app.get('/', (_req, res) => res.status(200).send('Service is up'));
 
-app.use(`/telegram/${process.env.TELEGRAM_TOKEN}`, webhookCallback(bot, 'express', {secretToken: SECRET}));
+app.use(
+  `/telegram/${process.env.TELEGRAM_TOKEN}`,
+  webhookCallback(bot, 'express', { secretToken: SECRET }),
+);
 
 app.use((req, _res, next) => {
   if (req.path.startsWith('/telegram')) {
     logger.info(`Incoming ${req.method} ${req.path}`, {
       headers: {
-        secret: req.header('x-telegram-bot-api-secret-token') ? 'present' : 'absent',
+        secret: req.header('x-telegram-bot-api-secret-token')
+          ? 'present'
+          : 'absent',
       },
     });
   }

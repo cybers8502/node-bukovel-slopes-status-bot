@@ -36,8 +36,8 @@ WORKDIR /usr/src/app
 
 # 4. Копіювання package.json
 COPY package*.json ./
-
 # 5. Встановлення залежностей
+ENV HUSKY=0
 RUN npm ci --omit=dev
 
 # 6. Копіювання решти коду
@@ -51,4 +51,4 @@ ENV PUPPETEER_SKIP_DOWNLOAD=true
 ENV PORT=8080
 
 # 9. Запуск застосунку
-CMD ["npm", "run", "dev"]
+CMD ["npm", "start"]
