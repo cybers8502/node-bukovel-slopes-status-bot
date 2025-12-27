@@ -27,11 +27,6 @@ const digest = async () => {
 
 app.get('/', (_req, res) => res.status(200).send('Service is up'));
 
-app.use(
-  `/telegram/${process.env.TELEGRAM_TOKEN}`,
-  webhookCallback(bot, 'express', { secretToken: SECRET }),
-);
-
 app.use((req, _res, next) => {
   if (req.path.startsWith('/telegram')) {
     logger.info(`Incoming ${req.method} ${req.path}`, {
@@ -44,6 +39,11 @@ app.use((req, _res, next) => {
   }
   next();
 });
+
+app.use(
+  '/telegram/webhook',
+  webhookCallback(bot, 'express', { secretToken: SECRET }),
+);
 
 app.use((err, _req, res, _next) => {
   logger.error('Express error:', err);
